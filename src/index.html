@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <section class="index-slider">
+          <div class="index-slider__inner">
+            <div class="index-slider__slider swiper">
+              <div class="index-slider__wrapper swiper-wrapper">
+                <div
+                  class="index-slider__slide swiper-slide"
+                  style="background-image: url(&quot;../img/slide-1.webp&quot;)"
+                >
+                  <div class="index-slider__container">
+                    <h2 class="index-slider__title">Высокоточная <br />3D-диагностика</h2>
+                    <p class="index-slider__subtitle">
+                      Цифровая диагностика с компьютерным томографом Gendex CB-500 из Германии — для премиального
+                      качества лечения
+                    </p>
+                    <button type="button" class="btn index-slider__btn">Подробнее</button>
+                  </div>
+                </div>
+                <div
+                  class="index-slider__slide swiper-slide"
+                  style="background-image: url(&quot;../img/slide-1.webp&quot;)"
+                >
+                  <div class="index-slider__container">
+                    <h2 class="index-slider__title">Высокоточная <br />3D-диагностика</h2>
+                    <p class="index-slider__subtitle">
+                      Цифровая диагностика с компьютерным томографом Gendex CB-500 из Германии — для премиального
+                      качества лечения
+                    </p>
+                    <button type="button" class="btn index-slider__btn">Подробнее</button>
+                  </div>
+                </div>
+              </div>
+              <div class="index-button-prev swiper-button-prev"></div>
+              <div class="index-button-next swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="index-service">
+          <div class="index-service__container">
+            <div class="index-service__inner">
+              <div class="index-service__grid">
+                <div class="index-service__col">
+                  <div class="index-service__head">
+                    <h2 class="index-service__title title">Популярные <span>услуги</span></h2>
+                    <p class="index-service__subtitle">
+                      Стоматология «Дента-лайт» предлагает пациентам широкий спектр стоматологических услуг высокого
+                      уровня и качества, начиная от различных способов диагностики и до сложных операций при лечении
+                      болезней полости рта.
+                    </p>
+                    <a href="#" class="btn index-service__link">Посмотреть все услуги</a>
+                  </div>
+                </div>
+                <div class="index-service__col index-service__col--first">
+                  <a href="#" class="index-service__item index-service__item--bottom">
+                    <div class="index-service__image">
+                      <img src="@img/service/gigiena.webp" alt="" class="" />
+                    </div>
+
+                    <div class="index-service__content index-service__content--first">
+                      Профессиональная гигиена полости рта. <br />Отбеливание зубов.
+                      <img src="@img/icon/i-arrow-right.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#" class="index-service__item index-service__item--bottom">
+                    <div class="index-service__image">
+                      <img src="@img/service/implanotoliga.webp" alt="" class="" />
+                    </div>
+
+                    <div class="index-service__content index-service__content--second">
+                      Имплантология
+                      <img src="@img/icon/i-arrow-right.svg" alt="" />
+                    </div>
+                  </a>
+                </div>
+                <div class="index-service__col index-service__col--second">
+                  <a href="#" class="index-service__item index-service__item--top">
+                    <div class="index-service__image">
+                      <img src="@img/service/stomatologiya.webp" alt="" class="" />
+                    </div>
+                    <div class="index-service__content index-service__content--third">
+                      Цифровая стоматология. Виниры
+                      <img src="@img/icon/i-arrow-right.svg" alt="" />
+                    </div>
+                  </a>
+                  <a href="#" class="index-service__item index-service__item--top">
+                    <div class="index-service__image">
+                      <img src="@img/service/elaineri-breketi.webp" alt="" class="" />
+                    </div>
+                    <div class="index-service__content index-service__content--fourth">
+                      Элайнеры. Брекеты
+                      <img src="@img/icon/i-arrow-right.svg" alt="" />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="index-about">
+          <div class="index-about__content">
+            <div class="index-about__container">
+              <div class="index-about__body">
+                <h2 class="index-about__title title">Про <span>нас</span></h2>
+                <div class="index-about__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut autem inventore hic quibusdam,
+                    sequi consequatur corporis, earum doloremque aspernatur optio assumenda nulla quae tempora debitis
+                    ducimus. Labore, aliquam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut
+                    autem inventore hic quibusdam, sequi consequatur corporis, earum doloremque aspernatur optio
+                    assumenda nulla quae tempora debitis ducimus. Labore, aliquam dolorem!
+                  </p>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut autem inventore hic quibusdam,
+                    sequi consequatur corporis, earum doloremque aspernatur optio assumenda nulla quae tempora debitis
+                    ducimus. Labore, aliquam dolorem!
+                  </p>
+                </div>
+                <a href="#" class="btn index-about__link">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+          <div class="index-about__image">
+            <img src="@img/about.jpg" alt="" title="" />
+          </div>
+        </section>
+
+        @@include('html/callback.html',{})
+
+        <section class="five-reasons">
+          <div class="five-reasons__container">
+            <div class="five-reasons__inner">
+              <div class="section-head">
+                <h2 class="five-reasons__title title">
+                  5 причин обратиться в <br />стоматологию <span>«Дента-Лайт»</span>
+                </h2>
+              </div>
+              <div class="five-reasons__text">
+                <p>
+                  It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like
+                  readable English. It is a long established fact that a reader will be distracted by the readable
+                  content of a page when looking at its layout.
+                </p>
+                <p>
+                  It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                  distribution of letters, as opposed to using 'Content here, content here', making it look like
+                  readable English. It is a long established fact that a reader will be distracted by the readable
+                  content of a page when looking at its layout.
+                </p>
+              </div>
+              <div class="five-reasons__grid">
+                <div class="five-reasons__item item-five">
+                  <div class="item-five__icon">
+                    <img src="@img/icon/i-expert.svg" alt="" />
+                  </div>
+                  <p class="item-five__title">Врачи экспертного уровня</p>
+                  <p class="item-five__subtitle">Специалисты высокой квалификации с большим опытом работы</p>
+                </div>
+                <div class="five-reasons__item item-five">
+                  <div class="item-five__icon">
+                    <img src="@img/icon/i-detail.svg" alt="" />
+                  </div>
+                  <p class="item-five__title">Детальный подход</p>
+                  <p class="item-five__subtitle">
+                    Подробно обследуем ваш случай, объясняем причину проблемы, предоставляем возможные решения
+                  </p>
+                </div>
+                <div class="five-reasons__item item-five">
+                  <div class="item-five__icon">
+                    <img src="@img/icon/i-premium.svg" alt="" />
+                  </div>
+                  <p class="item-five__title">Премиальное оснащение</p>
+                  <p class="item-five__subtitle">Оборудование и материалы от ведущих зарубежных производителей</p>
+                </div>
+                <div class="five-reasons__item item-five">
+                  <div class="item-five__icon">
+                    <img src="@img/icon/i-garant.svg" alt="" />
+                  </div>
+                  <p class="item-five__title">Гарантия безопасности</p>
+                  <p class="item-five__subtitle">Уделяем большое внимание стерильности и безопасности процедур</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="index-doctors">
+          <div class="index-doctors__container">
+            <div class="index-doctors__inner">
+              <div class="section-head">
+                <h2 class="index-doctors__title title">Наши <span>специалисты</span></h2>
+              </div>
+              <div class="index-doctors__slider swiper">
+                <div class="index-doctors__wrapper swiper-wrapper">
+                  <div class="index-doctors__slide swiper-slide">
+                    <div class="index-doctors__leftside">
+                      <a href="#">
+                        <img src="@img/doctor.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="index-doctors__rightside">
+                      <div class="index-doctors__rightside-inherit">
+                        <a href="" class="index-doctors__rightside-name">Иванов Иван Иванович</a>
+                        <span class="index-doctors__rightside-spec">Врач-стоматолог-терапевт</span>
+                      </div>
+                      <div class="index-doctors__rightside-inherit">
+                        <a href="" class="btn index-doctors__rightside-btn">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="index-doctors__slide swiper-slide">
+                    <div class="index-doctors__leftside">
+                      <a href="#">
+                        <img src="@img/doctor.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="index-doctors__rightside">
+                      <div class="index-doctors__rightside-inherit">
+                        <a href="" class="index-doctors__rightside-name">Иванов Иван Иванович</a>
+                        <span class="index-doctors__rightside-spec">Врач-стоматолог-терапевт</span>
+                      </div>
+                      <div class="index-doctors__rightside-inherit">
+                        <a href="" class="btn index-doctors__rightside-btn">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="index-doctors__slide swiper-slide">
+                    <div class="index-doctors__leftside">
+                      <a href="#">
+                        <img src="@img/doctor.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="index-doctors__rightside">
+                      <div class="index-doctors__rightside-inherit">
+                        <a href="" class="index-doctors__rightside-name">Иванов Иван Иванович</a>
+                        <span class="index-doctors__rightside-spec">Врач-стоматолог-терапевт</span>
+                      </div>
+                      <div class="index-doctors__rightside-inherit">
+                        <a href="" class="btn index-doctors__rightside-btn">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="index-doctors__slide swiper-slide">
+                    <div class="index-doctors__leftside">
+                      <a href="#">
+                        <img src="@img/doctor.jpg" alt="" />
+                      </a>
+                    </div>
+                    <div class="index-doctors__rightside">
+                      <div class="index-doctors__rightside-inherit">
+                        <a href="" class="index-doctors__rightside-name">Иванов Иван Иванович</a>
+                        <span class="index-doctors__rightside-spec">Врач-стоматолог-терапевт</span>
+                      </div>
+                      <div class="index-doctors__rightside-inherit">
+                        <a href="" class="btn index-doctors__rightside-btn">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="rating">
+          <div class="rating__inner">
+            <div class="rating__grid">
+              <div class="rating__col">
+                <div class="rating__image">
+                  <img src="@img/rating-background.jpg" alt="" />
+                </div>
+              </div>
+              <div class="rating__col">
+                <div class="rating__items">
+                  <a href="#" class="rating__item">
+                    <div class="rating__logo">
+                      <img src="@img/2gis.png" alt="" title="" />
+                    </div>
+                    <div class="rating__content">
+                      <p class="rating__number">4.5</p>
+                      <div class="rating__rating">
+                        <div class="rating__stars">
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                        </div>
+                        <div class="rating__reviews">10 отзывов</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="rating__item">
+                    <div class="rating__logo">
+                      <img src="@img/yamap.png" alt="" title="" />
+                    </div>
+                    <div class="rating__content">
+                      <p class="rating__number">4.5</p>
+                      <div class="rating__rating">
+                        <div class="rating__stars">
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                        </div>
+                        <div class="rating__reviews">10 отзывов</div>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" class="rating__item">
+                    <div class="rating__logo rating__logo--prodoctorov">
+                      <img src="@img/prodoktorov.png" alt="" title="" />
+                    </div>
+                    <div class="rating__content">
+                      <p class="rating__number">4.5</p>
+                      <div class="rating__rating">
+                        <div class="rating__stars">
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                          <img src="@img/star_full.png" alt="" />
+                        </div>
+                        <div class="rating__reviews">10 отзывов</div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="rating__text">
+                  <p>Здоровые зубы, красивая улыбка - мы создаём уверенность в каждой улыбке!</p>
+                </div>
+              </div>
+            </div>
+            <div class="reviews">
+              <div class="reviews__container">
+                <div class="reviews__slider swiper">
+                  <div class="reviews__wrapper swiper-wrapper">
+                    <div class="reviews__slide swiper-slide">
+                      <div class="reviews__head">
+                        <div class="reviews__name">
+                          <p>Иванов Иван</p>
+                          <a href="#">Первичная консультация</a>
+                        </div>
+                        <div class="reviews__rating">
+                          <div class="reviews__stars">
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                          </div>
+                          <div class="reviews__date">20.11.2023</div>
+                        </div>
+                      </div>
+                      <div class="reviews__content">
+                        <div class="reviews__text">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, iste modi facilis in ab
+                          a expedita vitae enim libero illo, quae dolores quis, autem unde totam natus ipsa. Fuga,
+                          porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi dolores
+                          laboriosam molestiae quae temporibus corporis repellat animi, iusto ad, non accusantium
+                          quisquam consectetur exercitationem cumque assumenda voluptatibus ipsa incidunt.
+                        </div>
+                        <button type="button" class="reviews__btn">Показать весь отзыв</button>
+                      </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                      <div class="reviews__head">
+                        <div class="reviews__name">
+                          <p>Иванов Иван</p>
+                          <a href="#">Первичная консультация</a>
+                        </div>
+                        <div class="reviews__rating">
+                          <div class="reviews__stars">
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                          </div>
+                          <div class="reviews__date">20.11.2023</div>
+                        </div>
+                      </div>
+                      <div class="reviews__content">
+                        <div class="reviews__text">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, iste modi facilis in ab
+                          a expedita vitae enim libero illo, quae dolores quis, autem unde totam natus ipsa. Fuga,
+                          porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi dolores
+                          laboriosam molestiae quae temporibus corporis repellat animi, iusto ad, non accusantium
+                          quisquam consectetur exercitationem cumque assumenda voluptatibus ipsa incidunt.
+                        </div>
+                        <button type="button" class="reviews__btn">Показать весь отзыв</button>
+                      </div>
+                    </div>
+                    <div class="reviews__slide swiper-slide">
+                      <div class="reviews__head">
+                        <div class="reviews__name">
+                          <p>Иванов Иван</p>
+                          <a href="#">Первичная консультация</a>
+                        </div>
+                        <div class="reviews__rating">
+                          <div class="reviews__stars">
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                            <img src="@img/star_full.png" alt="" />
+                          </div>
+                          <div class="reviews__date">20.11.2023</div>
+                        </div>
+                      </div>
+                      <div class="reviews__content">
+                        <div class="reviews__text">
+                          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, iste modi facilis in ab
+                          a expedita vitae enim libero illo, quae dolores quis, autem unde totam natus ipsa. Fuga,
+                          porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores excepturi dolores
+                          laboriosam molestiae quae temporibus corporis repellat animi, iusto ad, non accusantium
+                          quisquam consectetur exercitationem cumque assumenda voluptatibus ipsa incidunt.
+                        </div>
+                        <button type="button" class="reviews__btn">Показать весь отзыв</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="index-contact">
+          <div class="index-contact__container">
+            <div class="index-contact__inner">
+              <div class="index-contact__map">
+                <div class="map-top-opacity"></div>
+                <div class="map-right-opacity"></div>
+                <div class="map-bottom-opacity"></div>
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A614e10e42f42dc1e42ae88343fbfd6ea650dac98f8e0c721821bec661c70f5dc&amp;source=constructor"
+                  width="100%"
+                  height="400"
+                  frameborder="0"
+                ></iframe>
+              </div>
+              <div class="index-contact__content">
+                <h2 class="index-contact__title title">Контакты</h2>
+                <p class="index-contact__item">
+                  <img src="@img/icon/i-location.svg" alt="" title="" />г. Кемерово, ул Красная, д 14 А
+                </p>
+                <p class="index-contact__item">
+                  <img src="@img/icon/i-time.svg" alt="" title="" />Пн-Пт: 8:30-19:00 Сб-Вс: 8:30-16:00
+                </p>
+                <a href="tel:+79999999999" class="index-contact__item"
+                  ><img src="@img/icon/i-phone.svg" alt="" title="" />+7 (999) 999-99-99</a
+                >
+                <a href="#" class="index-contact__link btn">Узнать больше</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
+</html>
