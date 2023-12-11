@@ -148,3 +148,142 @@
     transition: $animation_speed;
   }
 }
+
+.menu-list {
+  padding: 100px 0px 50px;
+  background-color: #fffdf8;
+  color: $mainColor;
+
+  &:nth-child(even) {
+    background-color: rgba($color: #f3f1eb, $alpha: 1);
+  }
+
+  // .menu-list__container
+
+  &__container {
+  }
+
+  // .menu-list__inner
+
+  &__inner {
+    @media screen and (min-width: 767px) {
+      display: flex;
+    }
+  }
+
+  //   .menu-list__leftside
+  &__leftside {
+    min-width: 250px;
+  }
+
+  // .menu-list__title
+
+  &__title {
+    font-size: 22px;
+    position: sticky;
+    top: 10px;
+  }
+
+  // .menu-list__grid
+
+  &__grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 30px 30px;
+  }
+
+  // .menu-list__item
+
+  &__item {
+  }
+}
+.item-list {
+  &:hover {
+    .item-list__zoombtn {
+      display: flex;
+    }
+  }
+
+  // .item-list__image
+
+  &__image {
+    width: 100%;
+    height: 290px;
+    position: relative;
+    padding: 0px 0px 60%;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+  //   .item-list__zoombtn
+  &__zoombtn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba($color: $mainColor, $alpha: 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid rgba($color: $accent, $alpha: 1);
+    z-index: 2;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      background-image: url(../img/zoom-icon.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  // .item-list__content
+
+  &__content {
+    padding: 10px 0px;
+  }
+
+  // .item-list__leftside
+
+  &__leftside {
+  }
+
+  // .item-list__name
+
+  &__name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  // .item-list__charact
+
+  &__charact {
+    font-size: 15px;
+    color: rgba($color: $mainColor, $alpha: 0.6);
+  }
+
+  // .item-list__descr
+
+  &__descr {
+    display: none;
+  }
+}
