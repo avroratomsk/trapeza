@@ -2,14 +2,12 @@
   padding: 0px;
   margin: 0px;
   border: 0px;
-  transition: $animation_speed;
 }
 
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-  transition: $animation_speed;
 }
 
 :focus,
@@ -29,7 +27,7 @@ body {
 }
 
 body {
-  color: $mainColor;
+  color: $white;
   line-height: 1;
   font-family: $fontFamily;
   font-size: $fontSize;

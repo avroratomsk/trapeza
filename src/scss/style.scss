@@ -5,7 +5,8 @@
 
 // Подключение шрифтов ===========================================================================================================================================================================================================================================================================
 //&display=swap - добавить при подключении через плагин
-@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css2?family=Marck+Script&family=Train+One&display=swap);
 
 // Подключить если есть локальные файлы шрифтов
 //@import "fonts/fonts";
@@ -15,16 +16,16 @@
 //@import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "Manrope", sans-serif;
-// $secondaryFont: "Forum", serif;
+$fontFamily: "Comfortaa", sans-serif;
+$secondaryFont: "Train One", cursive;
 
 $fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$bodyColor: #f9faff;
-$mainColor: #546272; // Цвет шрифта по умолчанию
+$bodyColor: #171717;
+$mainColor: #171717; // Цвет шрифта по умолчанию
 // $accent: #CD0000;
-$accent: #3390ec;
+$accent: #c2ab89;
 $white: #ffffff;
 $grey: #939297;
 $lightBlue: #d4e9f5;
@@ -151,7 +152,7 @@ body {
 // Подключение стилей отдельных блоков
 @import "header";
 @import "footer";
-@import "callback";
+@import "side-menu";
 
 // Подключение стилей отдельных страниц
 @import "home";
