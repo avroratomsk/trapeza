@@ -1,174 +1,115 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: $white;
-  box-shadow: 0px 0px 16px 0px rgba(230, 230, 230, 0.5);
-  z-index: 99;
+  border-bottom: 1px solid rgba($color: $accent, $alpha: 0.3);
+  height: 100px;
 
   // .header__container
 
   &__container {
+    height: 100%;
   }
 
-  // .header__inner
-
+  //   .header__inner
   &__inner {
-  }
-
-  // .header__top
-
-  &__top {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 0px;
-    border-bottom: 1px solid rgba(84, 98, 114, 0.1);
   }
 
-  // .header__bottom
-
-  &__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 70px;
-    padding: 15px 0px;
-  }
-}
-.top-header {
-  // .top-header__item
-
-  &__item {
-    display: flex;
-    align-items: center;
-
-    img,
-    svg {
-      margin-right: 7.5px;
-    }
-
-    p,
-    a {
-      color: $grey;
-      font-size: 13.891px;
-      font-weight: 200;
-      line-height: 150%;
-    }
-  }
-
-  // .top-header__socials
-
-  &__socials {
-    a {
-      display: flex;
-      align-items: center;
-
-      &:not(:last-child) {
-        margin-right: 20px;
-      }
-    }
-  }
-}
-
-.bottom-header {
-  // .bottom-header__logo
+  // .header__logo
 
   &__logo {
     display: flex;
     align-items: center;
+    padding-right: 50px;
+    font-family: $secondaryFont;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 300;
+    border-right: 1px solid rgba($color: $accent, $alpha: 0.3);
   }
 
-  // .bottom-header__logo--text
+  // .header__contact
 
-  &__logo--text {
-    margin-left: 13px;
-    p {
-      color: #3390ec;
-      font-weight: 200;
-      line-height: 115%;
+  &__contact {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba($color: $accent, $alpha: 0.3);
+    color: $accent;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
 
-      &:first-child {
-        font-size: 20px;
-        margin-bottom: 4px;
-      }
-
-      &:last-child {
-        font-size: 12px;
+    &:hover {
+      .header__hide {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
       }
     }
   }
 
-  // .bottom-header__nav
+  // .header__hide
 
-  &__nav {
-  }
+  &__hide {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $accent;
+    width: 100%;
+    color: $mainColor;
+    transform: translateY(50px);
+    opacity: 0;
+    pointer-events: none;
+    transition: $animation_speed;
+    z-index: 99;
 
-  // .bottom-header__button
-
-  &__button {
-    button {
-      border-radius: 10px;
-      border: 1px solid $accent;
-      background: $accent;
-      box-shadow: 0px 0px 16px 0px rgba(230, 230, 230, 0.5);
-      width: 196px;
-      height: 47px;
+    a {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $white;
-      font-size: 15px;
-      font-weight: 500;
+      padding: 15px 20px;
+      font-size: 18px;
+      transition: $animation_speed;
+
+      &:hover {
+        background-color: rgba($color: $white, $alpha: 0.3);
+      }
+
+      &:first-child {
+        font-weight: 700;
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      padding: 15px 20px;
+      font-weight: 600;
+      transition: $animation_speed;
+
+      &:hover {
+        background-color: rgba($color: $white, $alpha: 0.3);
+      }
     }
   }
 }
-
-.menu {
+.nav {
   display: flex;
-  align-items: center;
-  // .menu__list
 
-  &__list {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  // .menu__item
-
-  &__item {
-    display: flex;
-    align-items: center;
-
-    img,
-    svg {
-      margin-top: 5px;
-      margin-left: 6px;
-    }
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
-  // .menu__item--service
-
-  &__item--service {
-    img,
-    svg {
-      margin-right: 15px;
-    }
-  }
-
-  // .menu__link
+  // .nav__link
 
   &__link {
-    color: #546272;
+    display: flex;
+    padding: 30px 20px;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 28px; /* 177.778% */
+    transition: $animation_speed;
+
+    &:hover {
+      color: $accent;
+    }
   }
 }
