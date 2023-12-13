@@ -636,7 +636,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba($color: $mainColor, $alpha: 0.6);
+    background-color: rgba($color: $mainColor, $alpha: 0.8);
   }
 
   // .callback__container
@@ -682,12 +682,31 @@
     background: transparent;
     height: 50px;
     width: 100%;
-    border: 1px solid rgba($color: $accent, $alpha: 0.7);
-    padding: 20px 0px;
+    border: 1px solid rgba($color: $bodyColor, $alpha: 0.7);
+    padding: 0px 20px;
+    color: $bodyColor;
+
+    &::placeholder {
+      color: $bodyColor;
+    }
+
+    &:focus {
+      border-color: $bodyColor;
+      outline: none;
+    }
   }
 
   // .callback__submit
 
   &__submit {
+    background-color: $accent;
+    width: 100%;
+    color: $bodyColor;
+    font-size: 16px;
+    transition: $animation_speed;
+
+    &:hover {
+      background-color: #74aa4b;
+    }
   }
 }
