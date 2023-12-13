@@ -1,82 +1,63 @@
 // Подключение функционала "Чертогов Фрилансера"
-import { isMobile } from "./functions.js";
+import { bodyLock, isMobile, bodyUnlock } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 
+const anchorLink = document.querySelectorAll("[data-anchor]");
+if (anchorLink) {
+  anchorLink.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      let dataAttrDate = item.dataset.anchor;
+      let section = document.getElementById(dataAttrDate);
+      let topBorderSection = section.getBoundingClientRect().top;
+      let headerHeight = document.querySelector("header").clientHeight;
+      let scrollHeight = topBorderSection - headerHeight;
 
-// let btnHideContentMenu = document.querySelector('.header-utp__btn');
-// if (btnHideContentMenu) {
-//     btnHideContentMenu.addEventListener('click', openHideContentMenu)
-
-//     function openHideContentMenu() {
-//         this.classList.toggle('_active');
-//         document.querySelector('.hidden-content').classList.toggle('_active')
-//     }
-// }
-
-// const btnBurger = document.querySelector('.header-utp__burger');
-// if (btnBurger) {
-//     btnBurger.addEventListener('click', () => {
-//         document.querySelector('.mega-menu').classList.add('_show-menu')
-//     })
-// }
-
-// const btnCloseMenu = document.querySelector('.mega-menu__close');
-// if (btnCloseMenu) {
-//     btnCloseMenu.addEventListener('click', () => {
-//         document.querySelector('.mega-menu').classList.remove('_show-menu')
-//     })
-// }
-
-// let tabTrigger = document.querySelectorAll('.tab__trigger');
-// if (tabTrigger.length > 0) {
-//     tabTrigger.forEach(trigger => {
-//         trigger.addEventListener('click', switchActiveClass)
-//     })
-
-//     function switchActiveClass() {
-//         let dataAttr = this.dataset.id;
-//         let tabContent = document.querySelectorAll('.tab');
-
-//         if (tabContent.length > 0) {
-//             tabContent.forEach(tab => {
-//                 if (dataAttr === tab.dataset.id) {
-//                     tab.classList.add('_active')
-//                 } else {
-//                     tab.classList.remove('_active')
-//                 }
-//             })
-//         }
-//     }
-// } 
-
-let menuItem = document.querySelectorAll('.btn_open-submenu');
-
-if (menuItem) {
-  menuItem.forEach(item => {
-    item.addEventListener('click', function (e) {
-      parent = this.closest('.modile-menu__item');
-      parent.classList.toggle('_active')
-    })
-  })
+      window.scrollBy({
+        top: scrollHeight,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+  });
 }
 
-let buttonsEnroll = document.querySelectorAll('.btn_service');
-
-if (buttonsEnroll) {
-  buttonsEnroll.forEach(item => {
-    item.addEventListener('click', function (e) {
-
-      let dataName = this.dataset.name;
-      let inputHideEnrollPopup = document.querySelector('.input__name');
-
-      if (inputHideEnrollPopup) {
-        inputHideEnrollPopup.value = dataName;
-      } else {
-        alert('Нету такого инпута')
-      }
-
-    })
-  })
+const btnBurger = document.querySelector("#burger");
+if (btnBurger) {
+  btnBurger.addEventListener("click", function (e) {
+    scrollLock();
+    document.documentElement.classList.add("lock");
+    btnBurger.classList.add("active");
+    document.querySelector(".popup-menu").classList.add("show");
+  });
 }
 
+const closeMenuPopup = document.querySelector(".popup-menu__close");
+if (closeMenuPopup) {
+  closeMenuPopup.addEventListener("click", function (e) {
+    document.documentElement.classList.remove("lock");
+    scrollUnlock();
+    btnBurger.classList.remove("active");
+    document.querySelector(".popup-menu").classList.remove("show");
+  });
+}
+
+function scrollLock() {
+  let scrollWidth = window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";
+  document.querySelector("body").style.paddingRight = scrollWidth;
+  document.querySelector(".header").style.paddingRight = scrollWidth;
+}
+
+function scrollUnlock() {
+  let scrollWidth = window.innerWidth - document.querySelector(".wrapper").offsetWidth + "px";
+  document.querySelector("body").style.paddingRight = "0px";
+  document.querySelector(".header").style.paddingRight = "0px";
+}
+
+let headerLogo = document.querySelector(".header__logo");
+
+let rightBorder = headerLogo.getBoundingClientRect();
+let leftBorder = headerLogo.getBoundingClientRect().left;
+
+console.log(rightBorder);
+// document.querySelector(".side-menu").style.width = rightBorder + leftBorder + "px";

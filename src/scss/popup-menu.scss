@@ -10,9 +10,13 @@
   align-items: center;
   justify-content: center;
   padding: 40px;
-  z-index: 99;
+  z-index: 101;
   overflow-y: auto;
   transition: $animation_speed;
+
+  &.show {
+    right: 0;
+  }
 
   //   .popup-menu__nav
   &__nav {
@@ -63,6 +67,11 @@
     padding: 20px 20px;
     font-size: 18px;
     border-bottom: 1px solid rgba($color: $mainColor, $alpha: 0.1);
+    transition: $animation_speed;
+
+    &:hover {
+      background-color: rgba($color: $accent, $alpha: 0.1);
+    }
   }
 
   // .popup-menu__socials

@@ -6,6 +6,7 @@
   left: 0;
   border-bottom: 1px solid rgba($color: $accent, $alpha: 0.3);
   background-color: $bodyColor;
+  padding-left: 100px;
   z-index: 99;
 
   // .header__container
@@ -34,6 +35,7 @@
     font-weight: 300;
     text-transform: uppercase;
     border-right: 1px solid rgba($color: $accent, $alpha: 0.3);
+    transition: $animation_speed;
   }
 
   // .header__burger
@@ -49,6 +51,7 @@
     font-size: 18px;
     font-weight: 600;
     position: relative;
+    transition: $animation_speed;
     cursor: pointer;
 
     button {
@@ -57,8 +60,8 @@
       height: 25px;
 
       span,
-      span::before,
-      span::after {
+      &::before,
+      &::after {
         content: "";
         display: block;
         position: absolute;
@@ -67,14 +70,29 @@
         width: 100%;
         height: 2px;
         background-color: $accent;
+        transition: $animation_speed;
       }
 
-      span::before {
+      &::before {
         transform: translateY(-5px);
       }
 
-      span::after {
+      &::after {
         transform: translateY(5px);
+      }
+
+      &.active {
+        span {
+          opacity: 0;
+        }
+
+        &::before {
+          transform: rotate(-45deg);
+        }
+
+        &::after {
+          transform: rotate(45deg);
+        }
       }
     }
   }

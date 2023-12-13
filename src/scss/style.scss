@@ -67,7 +67,7 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   // Скролл заблокирован
   .lock & {
     touch-action: none;
