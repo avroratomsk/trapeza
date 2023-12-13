@@ -1,6 +1,12 @@
 .header {
-  border-bottom: 1px solid rgba($color: $accent, $alpha: 0.3);
+  width: 100%;
   height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba($color: $accent, $alpha: 0.3);
+  background-color: $bodyColor;
+  z-index: 99;
 
   // .header__container
 
@@ -30,9 +36,9 @@
     border-right: 1px solid rgba($color: $accent, $alpha: 0.3);
   }
 
-  // .header__contact
+  // .header__burger
 
-  &__contact {
+  &__burger {
     width: 250px;
     height: 100%;
     display: flex;
@@ -45,55 +51,30 @@
     position: relative;
     cursor: pointer;
 
-    &:hover {
-      .header__hide {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: all;
-      }
-    }
-  }
-
-  // .header__hide
-
-  &__hide {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: $accent;
-    width: 100%;
-    color: $mainColor;
-    transform: translateY(50px);
-    opacity: 0;
-    pointer-events: none;
-    transition: $animation_speed;
-    z-index: 99;
-
-    a {
-      display: flex;
-      padding: 15px 20px;
-      font-size: 18px;
-      transition: $animation_speed;
-
-      &:hover {
-        background-color: rgba($color: $white, $alpha: 0.3);
-      }
-
-      &:first-child {
-        font-weight: 700;
-      }
-    }
-
     button {
-      display: flex;
-      align-items: flex-start;
-      width: 100%;
-      padding: 15px 20px;
-      font-weight: 600;
-      transition: $animation_speed;
+      position: relative;
+      width: 25px;
+      height: 25px;
 
-      &:hover {
-        background-color: rgba($color: $white, $alpha: 0.3);
+      span,
+      span::before,
+      span::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        width: 100%;
+        height: 2px;
+        background-color: $accent;
+      }
+
+      span::before {
+        transform: translateY(-5px);
+      }
+
+      span::after {
+        transform: translateY(5px);
       }
     }
   }
@@ -105,12 +86,25 @@
 
   &__link {
     display: flex;
-    padding: 30px 20px;
-    font-size: 16px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    font-size: 18px;
+    font-weight: 600;
     transition: $animation_speed;
 
     &:hover {
       color: $accent;
+    }
+
+    &--active {
+      color: $accent;
+    }
+
+    .day-number {
+      font-family: $menuFont;
+      // font-size: 13px;
+      margin-top: 5px;
     }
   }
 }

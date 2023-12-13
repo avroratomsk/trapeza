@@ -8,6 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa:300,regular,500,600,700);
 @import url(https://fonts.googleapis.com/css2?family=Marck+Script&family=Train+One&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 
 // Подключить если есть локальные файлы шрифтов
 //@import "fonts/fonts";
@@ -20,6 +21,7 @@
 $fontFamily: "Comfortaa", sans-serif;
 $secondaryFont: "Train One", cursive;
 $menuFont: "Amatic SC";
+$playForDisplay: "Playfair Display";
 
 $fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
 
@@ -158,6 +160,7 @@ body {
 @import "header";
 @import "footer";
 @import "side-menu";
+@import "popup-menu";
 
 // Подключение стилей отдельных страниц
 @import "home";
