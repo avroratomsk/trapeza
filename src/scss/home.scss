@@ -269,7 +269,7 @@
 .item-list {
   &:hover {
     .item-list__zoombtn {
-      display: flex;
+      opacity: 1;
     }
   }
 
@@ -293,7 +293,7 @@
   }
   //   .item-list__zoombtn
   &__zoombtn {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100px;
@@ -302,9 +302,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    opacity: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     border: 1px solid rgba($color: $accent, $alpha: 1);
+    transition: $animation_speed;
     z-index: 2;
     cursor: pointer;
 

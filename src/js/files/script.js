@@ -59,5 +59,25 @@ let headerLogo = document.querySelector(".header__logo");
 let rightBorder = headerLogo.getBoundingClientRect();
 let leftBorder = headerLogo.getBoundingClientRect().left;
 
-console.log(rightBorder);
-// document.querySelector(".side-menu").style.width = rightBorder + leftBorder + "px";
+let zoomBtn = document.querySelectorAll(".item-list__zoombtn");
+
+if (zoomBtn) {
+  zoomBtn.forEach((btn) => {
+    btn.addEventListener("click", function (e) {
+      let parent = btn.closest(".item-list");
+      if (parent) {
+        let image = parent.querySelector(".item-list-image").src;
+        let title = parent.querySelector(".item-list__name").innerText;
+        let info = parent.querySelector(".item-list__charact").innerText;
+        let text = parent.querySelector(".item-list__descr").innerHTML;
+
+        let popup = document.querySelector(".popup-fulldescr");
+
+        popup.querySelector(".popup-image").src = image;
+        popup.querySelector(".popup__title").innerText = title;
+        popup.querySelector(".popup__price").innerText = info;
+        popup.querySelector(".popup__descr").innerHTML = text;
+      }
+    });
+  });
+}
