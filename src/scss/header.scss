@@ -1,8 +1,39 @@
+.header-underline {
+  background-color: $accent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  // .header-underline__container
+
+  &__container {
+  }
+
+  // .header-underline__list
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+
+    a,
+    p {
+      display: flex;
+      color: $bodyColor;
+      &:not(:last-child) {
+        margin-right: 10vw;
+      }
+    }
+  }
+}
+
 .header {
   width: 100%;
   height: 100px;
   position: fixed;
-  top: 0;
+  top: 34px;
   left: 0;
   border-bottom: 1px solid rgba($color: $accent, $alpha: 0.3);
   background-color: $bodyColor;
@@ -97,6 +128,7 @@
     }
   }
 }
+
 .nav {
   display: flex;
 
@@ -107,7 +139,7 @@
     flex-direction: column;
     align-items: center;
     padding: 30px 30px;
-    font-size: 18px;
+    font-size: 13px;
     font-weight: 600;
     transition: $animation_speed;
 

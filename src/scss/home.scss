@@ -350,6 +350,11 @@
     color: rgba($color: $mainColor, $alpha: 0.6);
   }
 
+  // .item-list__bjy
+  &__bjy {
+    display: none;
+  }
+
   // .item-list__descr
 
   &__descr {
