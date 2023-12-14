@@ -685,7 +685,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 30px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -701,6 +701,7 @@ main {
 
 .nav__link .day-number {
   font-family: "Amatic SC";
+  font-size: 19px !important;
   margin-top: 5px;
 }
 
