@@ -29,7 +29,7 @@ body {
 body {
   color: $white;
   line-height: 1;
-  font-family: $fontFamily;
+  font-family: $playForDisplay;
   font-size: $fontSize;
   //text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
@@ -43,7 +43,7 @@ body {
 input,
 button,
 textarea {
-  font-family: $fontFamily;
+  font-family: $playForDisplay;
   font-size: inherit;
 }
 

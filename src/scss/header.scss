@@ -1,8 +1,8 @@
 .header-underline {
   background-color: $accent;
-  position: fixed;
-  top: 0;
-  left: 0;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
   width: 100%;
   z-index: 99;
   // .header-underline__container
@@ -32,9 +32,9 @@
 .header {
   width: 100%;
   height: 100px;
-  position: fixed;
-  top: 34px;
-  left: 0;
+  // position: fixed;
+  // top: 34px;
+  // left: 0;
   border-bottom: 1px solid rgba($color: $accent, $alpha: 0.3);
   background-color: $bodyColor;
   padding-left: 100px;

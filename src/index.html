@@ -1,853 +1,261 @@
 <!doctype html>
 <html lang="ru" class="">
-  @@include('html/_head.htm',{ "title":"Главная" })
+@@include('html/_head.htm',{ "title":"Главная" })
 
-  <body>
-    <div class="wrapper">
-      @@include('html/_header.htm',{})
-      <main class="page">
-        <div class="line-left"></div>
-        <div class="line-right"></div>
-        @@include('html/side-menu.html',{})
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    <main class="page">
+      <div class="line-left"></div>
+      <div class="line-right"></div>
+      @@include('html/side-menu.html',{})
 
-        <div class="index-slider">
-          <div class="index-slider__slider swiper">
-            <div class="index-slider__wrapper swiper-wrapper">
-              <div class="index-slider__slide swiper-slide" style="background-image: url(../img/slide-1.webp)">
-                <div class="index-slider__container">
-                  <div class="index-slider__inner">
-                    <h1 class="index-slider__title">Ждём Вас в нашей столовой!</h1>
-                    <p class="index-slider__subtitle">
-                      К нам приходят завтракать, обедать и ужинать, а также взять еду с собой.
-                    </p>
-                    <a href="#" class="index-slider__btn">
-                      Наше иеню
-                      <span class="line-top"></span>
-                      <span class="line-bottom"></span>
-                    </a>
+      <div class="index-banner" style="background-image: url(../img/banner-first.jpg);">
+        <div class="index-banner__container">
+          <div class="index-banner__content">
+            <p class="index-banner__undertitle">столовая по-домашнему</p>
+            <h1 class="index-banner__title">Трапеза</h1>
+            <div class="index-banner__btns">
+              <a href="#" class="index-banner__btn btn">Перейти в меню</a>
+              <a href="#" class="index-banner__btn btn">Связаться</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="index-service">
+        <button type="button" class="index-service__union" style="background-image: url(../img/Union.svg);">
+          <span><img src="@img/icon/i-chevron-down.svg" alt=""></span>
+        </button>
+        <div class="index-service__container">
+          <div class="index-service__grid">
+            <a href="#" class="index-service__item item-service">
+              <div class="item-service__top">
+                <p class="item-service__title">Меню на каждый день</p>
+                <div class="item-service__icon">
+                  <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-service__text">
+                Горячие обеды, ароматной выпечки, салаты и многого другого
+              </div>
+              <div class="item-service__image">
+                <img src="@img/banket-image.png" alt="">
+              </div>
+            </a>
+            <a href="#" class="index-service__item item-service">
+              <div class="item-service__top">
+                <p class="item-service__title">Организовать банкет</p>
+                <div class="item-service__icon">
+                  <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-service__text">
+                Организуем и оформим любое мероприятие
+              </div>
+              <div class="item-service__image">
+                <img src="@img/banket-image.png" alt="">
+              </div>
+            </a>
+            <a href="#" class="index-service__item item-service">
+              <div class="item-service__top">
+                <p class="item-service__title">Прийти поесть</p>
+                <div class="item-service__icon">
+                  <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-service__text">
+                Столовая "Трапеза" всегда рада гостям
+              </div>
+              <div class="item-service__image">
+                <img src="@img//bunket-image.jpg" alt="">
+              </div>
+            </a>
+            <a href="#" class="index-service__item item-service">
+              <div class="item-service__top">
+                <p class="item-service__title">Обеды памяти</p>
+                <div class="item-service__icon">
+                  <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
+                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="item-service__text">
+                Мы рядом с вами даже в самые тяжелые моменты
+              </div>
+              <div class="item-service__image">
+                <img src="@img/banket-image.png" alt="">
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="about" style="background-image: url(../img/about.jpg)">
+        <div class="about__container">
+          <h2 class="about__title title">О нас</h2>
+          <div class="about__inner">
+            <div class="about__content">
+              <p>
+                Кафе-Столовая Трапеза – это высокопрофессиональная команда специалистов, на счету которой десятки
+                проведенных банкетов, отмеченных восхищенными отзывами гостей. Мы достигли этого благодаря особому
+                подходу к организации кухни и планированию мероприятий. Мы считаем, что в нашей работе нет мелочей,
+                только главные детали!
+              </p>
+            </div>
+            <a href="" class="about__btn">Подробнее о нас</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <div class="reviews__container">
+          <div class="reviews__inner">
+            <div class="reviews__block-top">
+              <h2 class="reviews__title title">Отзывы клиентов</h2>
+            </div>
+            <div class="reviews__slider swiper">
+              <div class="reviews__wrapper swiper-wrapper">
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__quote">"</div>
+                  <div class="reviews__top">
+                    <div class="reviews__avatar">
+                      <img src="@img/face-1.jpg" alt="" />
+                    </div>
+                    <div class="reviews__name">
+                      <p>Иван Сидоров</p>
+                      <span>12.12.2023</span>
+                    </div>
+                  </div>
+                  <div class="reviews__bottom">
+                    <div class="reviews__text">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
+                        quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
+                        minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+                        expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
+                        neque quo, voluptate aliquid minima ullam unde culpa!
+                      </p>
+                    </div>
+                    <button type="button" class="reviews__btn">Читать отзыв полностью</button>
+                  </div>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__quote">"</div>
+                  <div class="reviews__top">
+                    <div class="reviews__avatar">
+                      <img src="@img/face-1.jpg" alt="" />
+                    </div>
+                    <div class="reviews__name">
+                      <p>Иван Сидоров</p>
+                      <span>12.12.2023</span>
+                    </div>
+                  </div>
+                  <div class="reviews__bottom">
+                    <div class="reviews__text">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
+                        quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
+                        minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+                        expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
+                        neque quo, voluptate aliquid minima ullam unde culpa!
+                      </p>
+                    </div>
+                    <button type="button" class="reviews__btn">Читать отзыв полностью</button>
+                  </div>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__quote">"</div>
+                  <div class="reviews__top">
+                    <div class="reviews__avatar">
+                      <img src="@img/face-1.jpg" alt="" />
+                    </div>
+                    <div class="reviews__name">
+                      <p>Иван Сидоров</p>
+                      <span>12.12.2023</span>
+                    </div>
+                  </div>
+                  <div class="reviews__bottom">
+                    <div class="reviews__text">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
+                        quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
+                        minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+                        expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
+                        neque quo, voluptate aliquid minima ullam unde culpa!
+                      </p>
+                    </div>
+                    <button type="button" class="reviews__btn">Читать отзыв полностью</button>
+                  </div>
+                </div>
+                <div class="reviews__slide swiper-slide">
+                  <div class="reviews__quote">"</div>
+                  <div class="reviews__top">
+                    <div class="reviews__avatar">
+                      <img src="@img/face-1.jpg" alt="" />
+                    </div>
+                    <div class="reviews__name">
+                      <p>Иван Сидоров</p>
+                      <span>12.12.2023</span>
+                    </div>
+                  </div>
+                  <div class="reviews__bottom">
+                    <div class="reviews__text">
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
+                        quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
+                        minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+                        expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
+                        neque quo, voluptate aliquid minima ullam unde culpa!
+                      </p>
+                    </div>
+                    <button type="button" class="reviews__btn">Читать отзыв полностью</button>
                   </div>
                 </div>
               </div>
-              <div class="index-slider__slide swiper-slide" style="background-image: url(../img/slide-3.jpg)">
-                <div class="index-slider__container">
-                  <div class="index-slider__inner">
-                    <h2 class="index-slider__title">Освободите себя от приготовления блюд перед Новым годом!</h2>
-                    <p class="index-slider__subtitle">
-                      Сделайте заказ для своего праздничного стола и заберите его 31 декабря!
-                    </p>
-                    <a href="#" class="index-slider__btn">
-                      Новогоднее меню
-                      <span class="line-top"></span>
-                      <span class="line-bottom"></span>
-                    </a>
-                  </div>
+              <div class="reviews__controls">
+                <button type="button" class="reviews__controls-btn">Оставить отзыв</button>
+                <div class="swiper-pagination reviews__controls-pagination"></div>
+                <div class="reviews__controls-inherit">
+                  <div class="swiper-button-prev reviews__controls-prev"></div>
+                  <div class="swiper-button-next reviews__controls-next"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="index-catalog">
-          <div class="index-catalog__container">
-            <div class="index-catalog__grid">
-              <div class="index-catalog__item"></div>
-            </div>
-          </div>
+      <div class="callback" style="background-image: url(../img/callback.webp)">
+        <div class="callback__container">
+          <h2 class="callback__title title">Напишите нам !</h2>
+          <p class="callback__subtitle">
+            Если вы хотите заказать корпоративные обеды, банкет, кейтеринг или другие мероприятия, предложить
+            сотрудничество или связаться по другому интересующему вас вопросу, заполните форму связи и мы обязательно
+            ответим!
+          </p>
+          <form action="#" class="callback__form">
+            <input type="text" name="name" placeholder="Имя" class="callback__input" />
+            <input type="text" name="phone" placeholder="Телефон" class="callback__input" />
+            <input type="text" name="message" placeholder="Сообщение" class="callback__input" />
+            <button type="submit" class="callback__submit">Отправить</button>
+          </form>
         </div>
+      </div>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
 
-        <div class="menu-list" id="menu-list">
-          <div class="anchor-scroll" data-anchor="menu-list">
-            <div class="anchor-scroll-hint"></div>
-          </div>
-          <div class="menu-list__container">
-            <div class="menu-list__inner">
-              <div class="menu-list__leftside">
-                <h2 class="menu-list__title">Горячие блюда</h2>
-              </div>
-
-              <div class="menu-list__grid">
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Курица с рисом и зелёным карри</p>
-                      <p class="item-list__charact">210г / 500р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-2.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Цыплёнок с молодым картофелем</p>
-                      <p class="item-list__charact">210г / 700р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-3.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Большая котлета из говядины</p>
-                      <p class="item-list__charact">250г / 200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-4.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Шницель по-милански</p>
-                      <p class="item-list__charact">250г / 1200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-5.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Курица с рисом и зелёным карри</p>
-                      <p class="item-list__charact">210г / 500р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-6.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Цыплёнок с молодым картофелем</p>
-                      <p class="item-list__charact">210г / 700р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-7.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Большая котлета из говядины</p>
-                      <p class="item-list__charact">250г / 200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-8.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Шницель по-милански</p>
-                      <p class="item-list__charact">250г / 1200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья нога
-                        с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс (крахмал
-                        кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="menu-list">
-          <div class="menu-list__container">
-            <div class="menu-list__inner">
-              <div class="menu-list__leftside">
-                <h2 class="menu-list__title">Салаты</h2>
-              </div>
-              <div class="menu-list__grid">
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Курица с рисом и зелёным карри</p>
-                      <p class="item-list__charact">210г / 500р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-2.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Цыплёнок с молодым картофелем</p>
-                      <p class="item-list__charact">210г / 700р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-3.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Большая котлета из говядины</p>
-                      <p class="item-list__charact">250г / 200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-4.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Шницель по-милански</p>
-                      <p class="item-list__charact">250г / 1200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-5.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Курица с рисом и зелёным карри</p>
-                      <p class="item-list__charact">210г / 500р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-6.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Цыплёнок с молодым картофелем</p>
-                      <p class="item-list__charact">210г / 700р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-7.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Большая котлета из говядины</p>
-                      <p class="item-list__charact">250г / 200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-8.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Шницель по-милански</p>
-                      <p class="item-list__charact">250г / 1200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья нога
-                        с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс (крахмал
-                        кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442))
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="menu-list">
-          <div class="menu-list__container">
-            <div class="menu-list__inner">
-              <div class="menu-list__leftside">
-                <h2 class="menu-list__title">Гарниры</h2>
-              </div>
-
-              <div class="menu-list__grid">
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Курица с рисом и зелёным карри</p>
-                      <p class="item-list__charact">210г / 500р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum nobis odit soluta quis
-                          architecto natus provident recusandae necessitatibus hic nam corporis eligendi autem, eaque,
-                          laboriosam, suscipit a fugiat incidunt! Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Qui culpa quam vitae, dolor adipisci aut expedita consectetur laboriosam corrupti
-                          deleniti. Rerum, praesentium laboriosam similique quibusdam vero quo at. Iste, pariatur!
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-2.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Цыплёнок с молодым картофелем</p>
-                      <p class="item-list__charact">210г / 700р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-                          аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-                          ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-                          (диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-                          (вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-                          (соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-                          питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-                          сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-                          оливковое, лук белый, петрушка, тимьян.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-3.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Большая котлета из говядины</p>
-                      <p class="item-list__charact">250г / 200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-                          аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-                          ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-                          (диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-                          (вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-                          (соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-                          питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-                          сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-                          оливковое, лук белый, петрушка, тимьян.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-4.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Шницель по-милански</p>
-                      <p class="item-list__charact">250г / 1200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-                          аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-                          ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-                          (диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-                          (вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-                          (соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-                          питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-                          сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-                          оливковое, лук белый, петрушка, тимьян.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-5.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Курица с рисом и зелёным карри</p>
-                      <p class="item-list__charact">210г / 500р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-                          аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-                          ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-                          (диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-                          (вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-                          (соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-                          питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-                          сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-                          оливковое, лук белый, петрушка, тимьян.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-6.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Цыплёнок с молодым картофелем</p>
-                      <p class="item-list__charact">210г / 700р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-                          аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-                          ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-                          (диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-                          (вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-                          (соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-                          питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-                          сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-                          оливковое, лук белый, петрушка, тимьян.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-7.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Большая котлета из говядины</p>
-                      <p class="item-list__charact">250г / 200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        <p>
-                          Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-                          нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-                          (крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-                          аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-                          ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-                          (диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-                          (вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-                          (соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-                          питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-                          сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-                          оливковое, лук белый, петрушка, тимьян.
-                        </p>
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-                <div class="menu-list__item item-list">
-                  <div class="item-list__image">
-                    <img src="@img/menu/food-8.jpg" alt="" title="" class="item-list-image" />
-                    <button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-                  </div>
-                  <div class="item-list__content">
-                    <div class="item-list__leftside">
-                      <p class="item-list__name">Шницель по-милански</p>
-                      <p class="item-list__charact">250г / 1200р.</p>
-                      <p class="item-list__bjy">
-                        В 100 г продукта содержится: Белки: 9.1 Жиры: 3 Углеводы: 6.5 89.4 ккал
-                      </p>
-                      <div class="item-list__descr">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum nobis odit soluta quis
-                        architecto natus provident recusandae necessitatibus hic nam corporis eligendi autem, eaque,
-                        laboriosam, suscipit a fugiat incidunt! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Qui culpa quam vitae, dolor adipisci aut expedita consectetur laboriosam corrupti deleniti.
-                        Rerum, praesentium laboriosam similique quibusdam vero quo at. Iste, pariatur!
-                      </div>
-                    </div>
-                    <!-- <div class="item-list__rightside"></div> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about" style="background-image: url(../img/about.jpg)">
-          <div class="about__container">
-            <h2 class="about__title title">О нас</h2>
-            <div class="about__inner">
-              <div class="about__content">
-                <p>
-                  Кафе-Столовая Трапеза – это высокопрофессиональная команда специалистов, на счету которой десятки
-                  проведенных банкетов, отмеченных восхищенными отзывами гостей. Мы достигли этого благодаря особому
-                  подходу к организации кухни и планированию мероприятий. Мы считаем, что в нашей работе нет мелочей,
-                  только главные детали!
-                </p>
-              </div>
-              <a href="" class="about__btn">Подробнее о нас</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="reviews">
-          <div class="reviews__container">
-            <div class="reviews__inner">
-              <div class="reviews__block-top">
-                <h2 class="reviews__title title">Отзывы клиентов</h2>
-              </div>
-              <div class="reviews__slider swiper">
-                <div class="reviews__wrapper swiper-wrapper">
-                  <div class="reviews__slide swiper-slide">
-                    <div class="reviews__quote">"</div>
-                    <div class="reviews__top">
-                      <div class="reviews__avatar">
-                        <img src="@img/face-1.jpg" alt="" />
-                      </div>
-                      <div class="reviews__name">
-                        <p>Иван Сидоров</p>
-                        <span>12.12.2023</span>
-                      </div>
-                    </div>
-                    <div class="reviews__bottom">
-                      <div class="reviews__text">
-                        <p>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
-                          quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
-                          minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                          expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
-                          neque quo, voluptate aliquid minima ullam unde culpa!
-                        </p>
-                      </div>
-                      <button type="button" class="reviews__btn">Читать отзыв полностью</button>
-                    </div>
-                  </div>
-                  <div class="reviews__slide swiper-slide">
-                    <div class="reviews__quote">"</div>
-                    <div class="reviews__top">
-                      <div class="reviews__avatar">
-                        <img src="@img/face-1.jpg" alt="" />
-                      </div>
-                      <div class="reviews__name">
-                        <p>Иван Сидоров</p>
-                        <span>12.12.2023</span>
-                      </div>
-                    </div>
-                    <div class="reviews__bottom">
-                      <div class="reviews__text">
-                        <p>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
-                          quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
-                          minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                          expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
-                          neque quo, voluptate aliquid minima ullam unde culpa!
-                        </p>
-                      </div>
-                      <button type="button" class="reviews__btn">Читать отзыв полностью</button>
-                    </div>
-                  </div>
-                  <div class="reviews__slide swiper-slide">
-                    <div class="reviews__quote">"</div>
-                    <div class="reviews__top">
-                      <div class="reviews__avatar">
-                        <img src="@img/face-1.jpg" alt="" />
-                      </div>
-                      <div class="reviews__name">
-                        <p>Иван Сидоров</p>
-                        <span>12.12.2023</span>
-                      </div>
-                    </div>
-                    <div class="reviews__bottom">
-                      <div class="reviews__text">
-                        <p>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
-                          quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
-                          minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                          expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
-                          neque quo, voluptate aliquid minima ullam unde culpa!
-                        </p>
-                      </div>
-                      <button type="button" class="reviews__btn">Читать отзыв полностью</button>
-                    </div>
-                  </div>
-                  <div class="reviews__slide swiper-slide">
-                    <div class="reviews__quote">"</div>
-                    <div class="reviews__top">
-                      <div class="reviews__avatar">
-                        <img src="@img/face-1.jpg" alt="" />
-                      </div>
-                      <div class="reviews__name">
-                        <p>Иван Сидоров</p>
-                        <span>12.12.2023</span>
-                      </div>
-                    </div>
-                    <div class="reviews__bottom">
-                      <div class="reviews__text">
-                        <p>
-                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
-                          quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
-                          minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                          expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
-                          neque quo, voluptate aliquid minima ullam unde culpa!
-                        </p>
-                      </div>
-                      <button type="button" class="reviews__btn">Читать отзыв полностью</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="reviews__controls">
-                  <button type="button" class="reviews__controls-btn">Оставить отзыв</button>
-                  <div class="swiper-pagination reviews__controls-pagination"></div>
-                  <div class="reviews__controls-inherit">
-                    <div class="swiper-button-prev reviews__controls-prev"></div>
-                    <div class="swiper-button-next reviews__controls-next"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="callback" style="background-image: url(../img/callback.webp)">
-          <div class="callback__container">
-            <h2 class="callback__title title">Напишите нам !</h2>
-            <p class="callback__subtitle">
-              Если вы хотите заказать корпоративные обеды, банкет, кейтеринг или другие мероприятия, предложить
-              сотрудничество или связаться по другому интересующему вас вопросу, заполните форму связи и мы обязательно
-              ответим!
-            </p>
-            <form action="#" class="callback__form">
-              <input type="text" name="name" placeholder="Имя" class="callback__input" />
-              <input type="text" name="phone" placeholder="Телефон" class="callback__input" />
-              <input type="text" name="message" placeholder="Сообщение" class="callback__input" />
-              <button type="submit" class="callback__submit">Отправить</button>
-            </form>
-          </div>
-        </div>
-      </main>
-      @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-  </body>
 </html>
