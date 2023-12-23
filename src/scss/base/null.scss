@@ -27,9 +27,9 @@ body {
 }
 
 body {
-  color: $white;
+  color: $mainColor;
   line-height: 1;
-  font-family: $playForDisplay;
+  font-family: $fontFamily;
   font-size: $fontSize;
   //text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;

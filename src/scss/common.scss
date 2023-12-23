@@ -8,9 +8,36 @@ main {
 
 
 .title {
-  font-size: clamp(25px, 3vw, 35px);
-  font-weight: 900;
+  font-size: clamp(25px, 3vw, 45px);
+  font-weight: 300;
   margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: $fontFamily;
+  
+  &::before{
+    content: '';
+    background-image: url(../img/icon/i-decor-title-left.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  &::after{
+    content: '';
+    background-image: url(../img/icon/i-decor-title-right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+  }
 }
 
 .anchor-scroll {
