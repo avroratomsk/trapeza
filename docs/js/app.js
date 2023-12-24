@@ -4291,7 +4291,7 @@
             });
         }));
     }));
-    const btnBurger = document.querySelector("#burger");
+    const btnBurger = document.querySelector(".header__burger");
     if (btnBurger) btnBurger.addEventListener("click", (function(e) {
         scrollLock();
         document.documentElement.classList.add("lock");
@@ -4326,14 +4326,21 @@
                 let image = parent.querySelector(".item-list-image").src;
                 let title = parent.querySelector(".item-list__name").innerText;
                 let info = parent.querySelector(".item-list__charact").innerText;
+                let bjy = parent.querySelector(".item-list__bjy").innerText;
                 let text = parent.querySelector(".item-list__descr").innerHTML;
                 let popup = document.querySelector(".popup-fulldescr");
                 popup.querySelector(".popup-image").src = image;
                 popup.querySelector(".popup__title").innerText = title;
                 popup.querySelector(".popup__price").innerText = info;
+                popup.querySelector(".popup__bjy").innerText = bjy;
                 popup.querySelector(".popup__descr").innerHTML = text;
             }
         }));
+    }));
+    let menuBtn = document.querySelector(".menu-btn");
+    if (menuBtn) menuBtn.addEventListener("click", (function(e) {
+        this.classList.toggle("menu-btn_active");
+        document.querySelector(".menu").classList.toggle("menu_active");
     }));
     window["FLS"] = true;
     isWebp();
