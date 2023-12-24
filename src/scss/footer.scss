@@ -115,14 +115,10 @@
   // .footer__logo
 
   &__logo {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    font-family: "Train One", cursive;
-    font-size: 25px;
-    font-weight: 300;
-    text-transform: uppercase;
     margin-bottom: 40px;
+    img{
+      width: 100px;
+    }
   }
 }
 
@@ -142,5 +138,11 @@
     text-align: center;
     color: $white;
     font-size: 17px;
+    transition: $animation_speed;
+    
+
+    &:hover{
+      opacity: .8;
+    }
   }
 }
