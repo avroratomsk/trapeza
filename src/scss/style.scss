@@ -9,29 +9,39 @@
 @import url(https://fonts.googleapis.com/css2?family=Marck+Script&family=Train+One&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Amatic+SC:regular,700);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Ruslan+Display&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 // Подключить если есть локальные файлы шрифтов
-//@import "fonts/fonts";
+@import "fonts/fonts";
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
 //@import "fonts/icons";
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
-$fontFamily: "Comfortaa", sans-serif;
-$secondaryFont: "Train One", cursive;
+// $fontFamily: "Comfortaa", sans-serif;
+// $fontFamily: "Monologue";
+$fontFamily: 'Ruslan Display', sans-serif;;
+// $secondaryFont: "Train One", cursive;
+// $secondaryFont: "TildaSans";
+$secondaryFont: "Nunito";
 $menuFont: "Amatic SC";
 $playForDisplay: "Playfair Display";
+$tildaSans: "TildaSans", sans-serif;
 
-$fontSize: rem(14); // где 14(px) - размер шрифта по умолчанию из макета
+$fontSize: rem(16); // где 16(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$bodyColor: #ffffff;
-$mainColor: #171717; // Цвет шрифта по умолчанию
+// $bodyColor: #ffffff;
+$bodyColor: #f3f3f3;
+$mainColor: #253746; // Цвет шрифта по умолчанию
 // $accent: #CD0000;
 // $accent: #c2ab89;
+$white: #ffffff;
 $accent: #9ac27c;
-$white: #171717;
 $grey: #939297;
 $orange: #ff6d00;
 $lightBlue: #d4e9f5;
@@ -44,7 +54,7 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1920;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 1660;
+$maxWidthContainer: 1843;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 30;
@@ -155,6 +165,7 @@ body {
 
 // Подключение стилей общих элементов проекта
 @import "common";
+@import "venobox";
 
 // Подключение стилей отдельных блоков
 @import "header";

@@ -117,12 +117,34 @@ body::after {
   // .popup__price
 
   .popup__price {
-    margin-bottom: 30px;
   }
 
   // .popup__descr
 
   .popup__descr {
     line-height: 150%;
+  }
+
+  // .popup__bjy
+
+  .popup__bjy {
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .popup__btn {
+    margin-top: 30px;
+    height: 50px;
+    width: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $accent;
+    color: $bodyColor;
+    font-size: 16px;
+    transition: $animation_speed;
+
+    &:hover {
+      background-color: #74aa4b;
+    }
   }
 }

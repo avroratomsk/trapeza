@@ -6,849 +6,288 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231224224047" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231224225010" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?_v=20231224224047" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?_v=20231224225010" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</style>
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<div class="header__container">
-				<div class="header__inner">
-					<a href="#" class="header__logo">Трапеза</a>
-					<nav class="nav">
-						<a href="#" class="nav__link nav__link--active">
-							<span>Понедельник</span>
-							<span class="day-number">12 декабря</span>
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<div class="top-header__inner">
+						<div class="top-header__logo">
+							<img src="img/logo-2.svg" alt="">
+						</div>
+						<div class="top-header__nav nav">
+							<ul class="nav__list">
+								<li class="nav__item"><a href="#" class="nav__link">Меню</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Акции</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Вакансии</a></li>
+								<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+							</ul>
+						</div>
+						<div class="top-header__actions">
+							<a href="tel:+79999999999" class="top-header__phone">+7 (999) 999-99-99</a>
+							<button type="button">Связаться с нами</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom bottom-header">
+				<div class="bottom-header__container">
+					<div class="bottom-header__days">
+						<a href="#" class="bottom-header__day">
+							<span class="bottom-header__day--name">Понедельник</span>
+							<span class="bottom-header__day--number">12 декабря</span>
 						</a>
-						<a href="#" class="nav__link">
-							<span>Вторник</span>
-							<span class="day-number">13 декабря</span>
+						<a href="#" class="bottom-header__day">
+							<span class="bottom-header__day--name">Вторник</span>
+							<span class="bottom-header__day--number">13 декабря</span>
 						</a>
-						<a href="#" class="nav__link">
-							<span>Среда</span>
-							<span class="day-number">14 декабря</span>
+						<a href="#" class="bottom-header__day">
+							<span class="bottom-header__day--name">Среда</span>
+							<span class="bottom-header__day--number">14 декабря</span>
 						</a>
-						<a href="#" class="nav__link">
-							<span>Четверг</span>
-							<span class="day-number">15 декабря</span>
+						<a href="#" class="bottom-header__day active">
+							<span class="bottom-header__day--name">Четверг</span>
+							<span class="bottom-header__day--number">15 декабря</span>
 						</a>
-						<a href="#" class="nav__link">
-							<span>Пятница</span>
-							<span class="day-number">16 декабря</span>
+						<a href="#" class="bottom-header__day">
+							<span class="bottom-header__day--name">Пятница</span>
+							<span class="bottom-header__day--number">16 декабря</span>
 						</a>
-						<a href="#" class="nav__link">
-							<span>Суббота</span>
-							<span class="day-number">17 декабря</span>
+						<a href="#" class="bottom-header__day">
+							<span class="bottom-header__day--name">Суббота</span>
+							<span class="bottom-header__day--number">17 декабря</span>
 						</a>
-						<a href="#" class="nav__link">
-							<span>Воскресенье</span>
-							<span class="day-number">18 декабря</span>
+						<a href="#" class="bottom-header__day">
+							<span class="bottom-header__day--name">Воскресенье</span>
+							<span class="bottom-header__day--number">18 декабря</span>
 						</a>
-					</nav>
-					<div class="header__burger">
-						<button type="button" id="burger"><span></span></button>
+						<a href="#" class="bottom-header__day">
+							<span class="bottom-header__day--name">Понедельник</span>
+							<span class="bottom-header__day--number">19 декабря</span>
+						</a>
 					</div>
 				</div>
 			</div>
 		</header>
-
 		<main class="page">
-			<div class="line-left"></div>
-			<div class="line-right"></div>
-			<div class="side-menu">
-				<div class="side-menu__inner">
-					<button type="button" class="side-menu__open">
-						<p>Меню</p>
-						<span><i class="fa-solid fa-bars"></i></span>
-					</button>
-					<ul class="side-menu__list">
-						<li class="side-menu__item">
-							<img src="img/icon/i-food.svg" alt="" />
-							<a href="#" class="side-menu__link">Банкетное</a>
-						</li>
-						<li class="side-menu__item">
-							<img src="img/icon/i-food.svg" alt="" />
-							<a href="#" class="side-menu__link">Поминально</a>
-						</li>
-						<li class="side-menu__item">
-							<img src="img/icon/i-food.svg" alt="" />
-							<a href="#" class="side-menu__link">Завтрак</a>
-						</li>
-						<li class="side-menu__item">
-							<img src="img/icon/i-food.svg" alt="" />
-							<a href="#" class="side-menu__link">Обед</a>
-						</li>
-						<li class="side-menu__item">
-							<img src="img/icon/i-food.svg" alt="" />
-							<a href="#" class="side-menu__link">Выпечка</a>
-						</li>
-						<li class="side-menu__item">
-							<img src="img/icon/i-food.svg" alt="" />
-							<a href="#" class="side-menu__link">Гарниры</a>
-						</li>
-						<li class="side-menu__item">
-							<img src="img/icon/i-food.svg" alt="" />
-							<a href="#" class="side-menu__link">Ужин</a>
-						</li>
-						<li class="side-menu__item">
-							<img src="img/icon/i-food.svg" alt="" />
-							<a href="#" class="side-menu__link">Фуршетное</a>
-						</li>
-					</ul>
+			<!-- <div class="side-menu">
+  <div class="side-menu__inner">
+    <button type="button" class="side-menu__open">
+      <p>Меню</p>
+      <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <ul class="side-menu__list">
+      <li class="side-menu__item">
+        <img src="img/icon/i-food.svg" alt="" />
+        <a href="#" class="side-menu__link">Банкетное</a>
+      </li>
+      <li class="side-menu__item">
+        <img src="img/icon/i-food.svg" alt="" />
+        <a href="#" class="side-menu__link">Поминально</a>
+      </li>
+      <li class="side-menu__item">
+        <img src="img/icon/i-food.svg" alt="" />
+        <a href="#" class="side-menu__link">Завтрак</a>
+      </li>
+      <li class="side-menu__item">
+        <img src="img/icon/i-food.svg" alt="" />
+        <a href="#" class="side-menu__link">Обед</a>
+      </li>
+      <li class="side-menu__item">
+        <img src="img/icon/i-food.svg" alt="" />
+        <a href="#" class="side-menu__link">Выпечка</a>
+      </li>
+      <li class="side-menu__item">
+        <img src="img/icon/i-food.svg" alt="" />
+        <a href="#" class="side-menu__link">Гарниры</a>
+      </li>
+      <li class="side-menu__item">
+        <img src="img/icon/i-food.svg" alt="" />
+        <a href="#" class="side-menu__link">Ужин</a>
+      </li>
+      <li class="side-menu__item">
+        <img src="img/icon/i-food.svg" alt="" />
+        <a href="#" class="side-menu__link">Фуршетное</a>
+      </li>
+    </ul>
+  </div>
+</div> -->
+
+			<div class="index-banner" style="background-image: url(img/banner-first-3.jpg);">
+				<div class="index-banner__container">
+					<div class="index-banner__content">
+						<p class="index-banner__undertitle">столовая по-домашнему</p>
+						<h1 class="index-banner__title">трапеза</h1>
+						<div class="index-banner__btns">
+							<a href="#" class="index-banner__btn btn">Перейти в меню</a>
+							<a href="#" class="index-banner__btn btn">Связаться</a>
+						</div>
+					</div>
 				</div>
 			</div>
 
-
-			<div class="index-slider">
-				<div class="index-slider__slider swiper">
-					<div class="index-slider__wrapper swiper-wrapper">
-						<div class="index-slider__slide swiper-slide" style="background-image: url(img/slide-1.webp)">
-							<div class="index-slider__container">
-								<div class="index-slider__inner">
-									<h1 class="index-slider__title">Ждём Вас в нашей столовой!</h1>
-									<p class="index-slider__subtitle">
-										К нам приходят завтракать, обедать и ужинать, а также взять еду с собой.
-									</p>
-									<a href="#" class="index-slider__btn">
-										Наше иеню
-										<span class="line-top"></span>
-										<span class="line-bottom"></span>
-									</a>
+			<div class="index-service">
+				<button type="button" class="index-service__union" style="background-image: url(img/Union.svg);">
+					<span><img src="img/icon/i-chevron-down.svg" alt=""></span>
+				</button>
+				<div class="index-service__container">
+					<div class="index-service__grid">
+						<a href="#" class="index-service__item item-service">
+							<div class="item-service__top">
+								<p class="item-service__title">Меню на каждый день</p>
+								<div class="item-service__icon">
+									<svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
+									</svg>
 								</div>
 							</div>
-						</div>
-						<div class="index-slider__slide swiper-slide" style="background-image: url(img/slide-3.jpg)">
-							<div class="index-slider__container">
-								<div class="index-slider__inner">
-									<h2 class="index-slider__title">Освободите себя от приготовления блюд перед Новым годом!</h2>
-									<p class="index-slider__subtitle">
-										Сделайте заказ для своего праздничного стола и заберите его 31 декабря!
-									</p>
-									<a href="#" class="index-slider__btn">
-										Новогоднее меню
-										<span class="line-top"></span>
-										<span class="line-bottom"></span>
-									</a>
+							<div class="item-service__text">
+								Горячие обеды, ароматной выпечки, салаты и много другого
+							</div>
+							<div class="item-service__image">
+								<picture><source srcset="img/2_6.webp" type="image/webp"><img src="img/2_6.jpg" alt=""></picture>
+							</div>
+						</a>
+						<a href="#" class="index-service__item item-service">
+							<div class="item-service__top">
+								<p class="item-service__title">Организовать банкет</p>
+								<div class="item-service__icon">
+									<svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
+									</svg>
 								</div>
 							</div>
-						</div>
+							<div class="item-service__text">
+								Организуем и оформим любое мероприятие
+							</div>
+							<div class="item-service__image">
+								<picture><source srcset="img/2_5.webp" type="image/webp"><img src="img/2_5.jpg" alt=""></picture>
+							</div>
+						</a>
+						<a href="#" class="index-service__item item-service">
+							<div class="item-service__top">
+								<p class="item-service__title">Прийти поесть</p>
+								<div class="item-service__icon">
+									<svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
+									</svg>
+								</div>
+							</div>
+							<div class="item-service__text">
+								Столовая "Трапеза" всегда рада гостям
+							</div>
+							<div class="item-service__image">
+								<picture><source srcset="img//bunket-image.webp" type="image/webp"><img src="img//bunket-image.jpg" alt=""></picture>
+							</div>
+						</a>
+						<a href="#" class="index-service__item item-service">
+							<div class="item-service__top">
+								<p class="item-service__title">Обеды памяти</p>
+								<div class="item-service__icon">
+									<svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
+									</svg>
+								</div>
+							</div>
+							<div class="item-service__text">
+								Мы рядом с вами даже в самые тяжелые моменты
+							</div>
+							<div class="item-service__image">
+								<picture><source srcset="img/2_2.webp" type="image/webp"><img src="img/2_2.jpg" alt=""></picture>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
 
 			<div class="index-catalog">
 				<div class="index-catalog__container">
-					<div class="index-catalog__grid">
-						<div class="index-catalog__item"></div>
-					</div>
-				</div>
-			</div>
-
-			<div class="menu-list" id="menu-list">
-				<div class="anchor-scroll" data-anchor="menu-list">
-					<div class="anchor-scroll-hint"></div>
-				</div>
-				<div class="menu-list__container">
-					<div class="menu-list__inner">
-						<div class="menu-list__leftside">
-							<h2 class="menu-list__title">Горячие блюда</h2>
+					<h2 class="index-catalog__title title--dark">Меню</h2>
+					<div class="index-catalog__tab tab">
+						<div class="tab__head">
+							<button type="button" class="tab__trigger active" data-id="all">Всё</button>
+							<button type="button" class="tab__trigger" data-id="breakfast">Завраки</button>
+							<button type="button" class="tab__trigger" data-id="dinner">Обеды</button>
+							<button type="button" class="tab__trigger" data-id="day">Меню дня</button>
+							<button type="button" class="tab__trigger" data-id="funeral">Поминальное меню</button>
 						</div>
-
-						<div class="menu-list__grid">
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Курица с рисом и зелёным карри</p>
-										<p class="item-list__charact">210г / 500р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+						<div class="tab__content">
+							<div class="tab__content-grid" data-id="all">
+								<div class="tab__content-item">
+									<div class="tab__content-image">
+										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-2.webp" type="image/webp"><img src="img/menu/food-2.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Цыплёнок с молодым картофелем</p>
-										<p class="item-list__charact">210г / 700р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+									<a href="#" class="tab__content-name">Блинчики</a>
+									<p class="tab__content-price">85₽</p>
+									<div class="tab__content-btns">
+										<a href="#" class="tab__content-btn">Подробнее</a>
+										<a href="#" class="tab__content-btn">Описание</a>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
 								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-3.webp" type="image/webp"><img src="img/menu/food-3.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Большая котлета из говядины</p>
-										<p class="item-list__charact">250г / 200р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+								<div class="tab__content-item">
+									<div class="tab__content-image">
+										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-4.webp" type="image/webp"><img src="img/menu/food-4.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Шницель по-милански</p>
-										<p class="item-list__charact">250г / 1200р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+									<a href="#" class="tab__content-name">Блинчики</a>
+									<p class="tab__content-price">85₽</p>
+									<div class="tab__content-btns">
+										<a href="#" class="tab__content-btn">Подробнее</a>
+										<a href="#" class="tab__content-btn">Описание</a>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
 								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-5.webp" type="image/webp"><img src="img/menu/food-5.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Курица с рисом и зелёным карри</p>
-										<p class="item-list__charact">210г / 500р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+								<div class="tab__content-item">
+									<div class="tab__content-image">
+										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-6.webp" type="image/webp"><img src="img/menu/food-6.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Цыплёнок с молодым картофелем</p>
-										<p class="item-list__charact">210г / 700р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+									<a href="#" class="tab__content-name">Блинчики</a>
+									<p class="tab__content-price">85₽</p>
+									<div class="tab__content-btns">
+										<a href="#" class="tab__content-btn">Подробнее</a>
+										<a href="#" class="tab__content-btn">Описание</a>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
 								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-7.webp" type="image/webp"><img src="img/menu/food-7.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Большая котлета из говядины</p>
-										<p class="item-list__charact">250г / 200р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+								<div class="tab__content-item">
+									<div class="tab__content-image">
+										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-8.webp" type="image/webp"><img src="img/menu/food-8.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Шницель по-милански</p>
-										<p class="item-list__charact">250г / 1200р.</p>
-										<div class="item-list__descr">
-											Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья нога
-											с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс (крахмал
-											кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и аромата
-											(Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный, ароматизаторы,
-											фракция масла растительного, регулятор кислотности-лимонная кислота, консервант (диоксид серы),
-											вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый (вода питьевая, рис),
-											вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан (соя, мука пшеничная
-											в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода питьевая, соевые бобы 25.21%,
-											соль пищевая, мука пшеничная в/с, консервант сорбат калия), сахар коричневый мелкий, грибы
-											шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло оливковое, лук белый, петрушка,
-											тимьян.
-										</div>
+									<a href="#" class="tab__content-name">Блинчики</a>
+									<p class="tab__content-price">85₽</p>
+									<div class="tab__content-btns">
+										<a href="#" class="tab__content-btn">Подробнее</a>
+										<a href="#" class="tab__content-btn">Описание</a>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="menu-list">
-				<div class="menu-list__container">
-					<div class="menu-list__inner">
-						<div class="menu-list__leftside">
-							<h2 class="menu-list__title">Салаты</h2>
-						</div>
-						<div class="menu-list__grid">
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Курица с рисом и зелёным карри</p>
-										<p class="item-list__charact">210г / 500р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+								<div class="tab__content-item">
+									<div class="tab__content-image">
+										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-2.webp" type="image/webp"><img src="img/menu/food-2.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Цыплёнок с молодым картофелем</p>
-										<p class="item-list__charact">210г / 700р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+									<a href="#" class="tab__content-name">Блинчики</a>
+									<p class="tab__content-price">85₽</p>
+									<div class="tab__content-btns">
+										<a href="#" class="tab__content-btn">Подробнее</a>
+										<a href="#" class="tab__content-btn">Описание</a>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
 								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-3.webp" type="image/webp"><img src="img/menu/food-3.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Большая котлета из говядины</p>
-										<p class="item-list__charact">250г / 200р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+								<div class="tab__content-item">
+									<div class="tab__content-image">
+										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-4.webp" type="image/webp"><img src="img/menu/food-4.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Шницель по-милански</p>
-										<p class="item-list__charact">250г / 1200р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
+									<a href="#" class="tab__content-name">Блинчики</a>
+									<p class="tab__content-price">85₽</p>
+									<div class="tab__content-btns">
+										<a href="#" class="tab__content-btn">Подробнее</a>
+										<a href="#" class="tab__content-btn">Описание</a>
 									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-5.webp" type="image/webp"><img src="img/menu/food-5.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Курица с рисом и зелёным карри</p>
-										<p class="item-list__charact">210г / 500р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-6.webp" type="image/webp"><img src="img/menu/food-6.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Цыплёнок с молодым картофелем</p>
-										<p class="item-list__charact">210г / 700р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-7.webp" type="image/webp"><img src="img/menu/food-7.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Большая котлета из говядины</p>
-										<p class="item-list__charact">250г / 200р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-8.webp" type="image/webp"><img src="img/menu/food-8.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Шницель по-милански</p>
-										<p class="item-list__charact">250г / 1200р.</p>
-										<div class="item-list__descr">
-											Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья нога
-											с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс (крахмал
-											кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и аромата
-											(Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный, ароматизаторы,
-											фракция масла растительного, регулятор кислотности-лимонная кислота, консервант (диоксид серы),
-											вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый (вода питьевая, рис),
-											вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан (соя, мука пшеничная
-											в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода питьевая, соевые бобы 25.21%,
-											соль пищевая, мука пшеничная в/с, консервант сорбат калия), сахар коричневый мелкий, грибы
-											шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло оливковое, лук белый, петрушка,
-											тимьян.
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="menu-list">
-				<div class="menu-list__container">
-					<div class="menu-list__inner">
-						<div class="menu-list__leftside">
-							<h2 class="menu-list__title">Гарниры</h2>
-						</div>
-
-						<div class="menu-list__grid">
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Курица с рисом и зелёным карри</p>
-										<p class="item-list__charact">210г / 500р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-2.webp" type="image/webp"><img src="img/menu/food-2.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Цыплёнок с молодым картофелем</p>
-										<p class="item-list__charact">210г / 700р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-3.webp" type="image/webp"><img src="img/menu/food-3.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Большая котлета из говядины</p>
-										<p class="item-list__charact">250г / 200р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-4.webp" type="image/webp"><img src="img/menu/food-4.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Шницель по-милански</p>
-										<p class="item-list__charact">250г / 1200р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-5.webp" type="image/webp"><img src="img/menu/food-5.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Курица с рисом и зелёным карри</p>
-										<p class="item-list__charact">210г / 500р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-6.webp" type="image/webp"><img src="img/menu/food-6.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Цыплёнок с молодым картофелем</p>
-										<p class="item-list__charact">210г / 700р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-7.webp" type="image/webp"><img src="img/menu/food-7.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Большая котлета из говядины</p>
-										<p class="item-list__charact">250г / 200р.</p>
-										<div class="item-list__descr">
-											<p>
-												Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья
-												нога с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс
-												(крахмал кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и
-												аромата (Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный,
-												ароматизаторы, фракция масла растительного, регулятор кислотности-лимонная кислота, консервант
-												(диоксид серы), вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый
-												(вода питьевая, рис), вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан
-												(соя, мука пшеничная в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода
-												питьевая, соевые бобы 25.21%, соль пищевая, мука пшеничная в/с, консервант сорбат калия),
-												сахар коричневый мелкий, грибы шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло
-												оливковое, лук белый, петрушка, тимьян.
-											</p>
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
-								</div>
-							</div>
-							<div class="menu-list__item item-list">
-								<div class="item-list__image">
-									<picture><source srcset="img/menu/food-8.webp" type="image/webp"><img src="img/menu/food-8.jpg" alt="" title="" class="item-list-image" /></picture>
-									<button type="button" class="item-list__zoombtn" data-popup=".popup-fulldescr"></button>
-								</div>
-								<div class="item-list__content">
-									<div class="item-list__leftside">
-										<p class="item-list__name">Шницель по-милански</p>
-										<p class="item-list__charact">250г / 1200р.</p>
-										<div class="item-list__descr">
-											Щёчка с грибами (щека телячья, лук репчатый, мясной соус деми гласс (хвост говяжий, говяжья нога
-											с копытцем, морковь, лук репчатый, масло растительное, основа для бульона деми гласс (крахмал
-											кукурузный, соль, сахар, мука пшеничная в/с, загуститель (Е1442), усилитель вкуса и аромата
-											(Е621), экстракт дрожжей, мальтодекстрин, краситель(Е150d), лук репчатый сушеный, ароматизаторы,
-											фракция масла растительного, регулятор кислотности-лимонная кислота, консервант (диоксид серы),
-											вино красное сухое, соус шии-таки (соус такара Мирин (сахар, уксус рисовый (вода питьевая, рис),
-											вода питьевая, консерванты: бензоат натрия, сорбат калия), уксус Мицукан (соя, мука пшеничная
-											в/с, рис, вода питьевая, сахар, соль пищевая), соус соевый (вода питьевая, соевые бобы 25.21%,
-											соль пищевая, мука пшеничная в/с, консервант сорбат калия), сахар коричневый мелкий, грибы
-											шии-таки, гвоздика, бадьян)), грибы лисички, шпинат, масло оливковое, лук белый, петрушка,
-											тимьян.
-										</div>
-									</div>
-									<!-- <div class="item-list__rightside"></div> -->
 								</div>
 							</div>
 						</div>
@@ -877,7 +316,7 @@
 				<div class="reviews__container">
 					<div class="reviews__inner">
 						<div class="reviews__block-top">
-							<h2 class="reviews__title title">Отзывы клиентов</h2>
+							<h2 class="reviews__title title--dark">Отзывы клиентов</h2>
 						</div>
 						<div class="reviews__slider swiper">
 							<div class="reviews__wrapper swiper-wrapper">
@@ -1007,6 +446,86 @@
 					</form>
 				</div>
 			</div>
+
+			<div class="index-gallery">
+				<div class="index-gallery__container">
+					<div class="index-gallery__title title--dark">Галерея</div>
+					<div class="index-gallery__header">
+						<a href="#" class="active">Салаты</a>
+						<a href="#">Горячее</a>
+						<a href="#">Торты и десерты</a>
+						<a href="#">Выпечка</a>
+						<a href="#">Напитки</a>
+						<a href="#">Супы</a>
+						<a href="#">Гариниры</a>
+					</div>
+					<div class="index-gallery__grid">
+						<a href="img/gallery/IMG_4300.jpg" data-gall="myGallery" class="index-gallery__item">
+							<picture><source srcset="img/gallery/IMG_4300.webp" type="image/webp"><img src="img/gallery/IMG_4300.jpg" alt=""></picture>
+							<i class="fa-regular fa-square-plus"></i>
+						</a>
+						<a href="img/gallery/a7001b41_2f6b_4c29_89bb_38a95a06953b-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
+							<picture><source srcset="img/gallery/a7001b41_2f6b_4c29_89bb_38a95a06953b-_1_.webp" type="image/webp"><img src="img/gallery/a7001b41_2f6b_4c29_89bb_38a95a06953b-_1_.jpg" alt=""></picture>
+							<i class="fa-regular fa-square-plus"></i>
+						</a>
+						<a href="img/gallery/furshet_svadba.jpg" data-gall="myGallery" class="index-gallery__item">
+							<picture><source srcset="img/gallery/furshet_svadba.webp" type="image/webp"><img src="img/gallery/furshet_svadba.jpg" alt=""></picture>
+							<i class="fa-regular fa-square-plus"></i>
+						</a>
+						<a href="img/gallery/y-_131-of-188_-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
+							<picture><source srcset="img/gallery/y-_131-of-188_-_1_.webp" type="image/webp"><img src="img/gallery/y-_131-of-188_-_1_.jpg" alt=""></picture>
+							<i class="fa-regular fa-square-plus"></i>
+						</a>
+						<a href="img/gallery/y-_211-of-254_-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
+							<picture><source srcset="img/gallery/y-_211-of-254_-_1_.webp" type="image/webp"><img src="img/gallery/y-_211-of-254_-_1_.jpg" alt=""></picture>
+							<i class="fa-regular fa-square-plus"></i>
+						</a>
+						<a href="img/gallery/y-_40-of-116_-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
+							<picture><source srcset="img/gallery/y-_40-of-116_-_1_.webp" type="image/webp"><img src="img/gallery/y-_40-of-116_-_1_.jpg" alt=""></picture>
+							<i class="fa-regular fa-square-plus"></i>
+						</a>
+						<a href="img/gallery/IMG_4300.jpg" data-gall="myGallery" class="index-gallery__item">
+							<picture><source srcset="img/gallery/IMG_4300.webp" type="image/webp"><img src="img/gallery/IMG_4300.jpg" alt=""></picture>
+							<i class="fa-regular fa-square-plus"></i>
+						</a>
+						<a href="img/gallery/furshet_svadba.jpg" data-gall="myGallery" class="index-gallery__item">
+							<picture><source srcset="img/gallery/furshet_svadba.webp" type="image/webp"><img src="img/gallery/furshet_svadba.jpg" alt=""></picture>
+							<i class="fa-regular fa-square-plus"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="map" style="background-image: url(img/map.jpeg);">
+				<div class="map__container">
+					<div class="map__inner">
+						<div class="map__content">
+							<div class="map__contact">
+								<p class="map__title">Столовая Трапеза</p>
+								<div class="map__contact-items">
+									<a href="tel:+79999999999">+7 (999) 999-99-99</a>
+									<p>ул.Ленина 193</p>
+									<a href="mailto:trapeza@mail.ru">trapeza@mail.ru</a>
+									<a href="#">WhatsApp</a>
+									<a href="#">Telegram</a>
+									<a href="#">Viber</a>
+								</div>
+							</div>
+							<div class="map__callback">
+								<div class="map__callback-row">
+									<div class="map__callback-avatar">
+										<picture><source srcset="img/face.webp" type="image/webp"><img src="img/face.png" alt=""></picture>
+									</div>
+									<div class="map__callback-action">
+										<p>Связаться с менеджером</p>
+										<button type="button">Написать</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -1058,6 +577,14 @@
 				</div>
 			</div>
 		</footer>
+		<div class="author">
+			<div class="author__container">
+				<div class="author__inner">
+					Разработка сайта | <a href="#">РА Аврора</a>
+				</div>
+			</div>
+		</div>
+
 		<div class="popup-menu">
 			<button type="button" class="popup-menu__close"></button>
 			<nav class="popup-menu__nav">
@@ -1082,7 +609,6 @@
 			</div>
 			<button type="button" class="popup-menu__btn">Позвонить</button>
 		</div>
-
 	</div>
 	<div id="popup" aria-hidden="true" class="popup popup-fulldescr">
 		<div class="popup__wrapper">
@@ -1095,13 +621,15 @@
 					<div class="popup__info">
 						<p class="popup__title"></p>
 						<p class="popup__price"></p>
+						<p class="popup__bjy"></p>
 						<p class="popup__descr"></p>
 					</div>
+					<button type="button" class="popup__btn">Позвонить</button>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231224224047"></script>
+	<script src="js/app.min.js?_v=20231224225010"></script>
 </body>
 
 </html>
