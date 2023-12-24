@@ -99,6 +99,7 @@ import * as flsForms from "./files/forms/forms.js";
 Сниппет(HTML):
 */
 // import "./files/forms/inputmask.js";
+import "./files/venobox.js";
 
 /* Модуль работы с ползунком */
 /*

@@ -3,6 +3,10 @@ import { bodyLock, isMobile, bodyUnlock } from "./functions.js";
 // Подключение списка активных модулей
 import { flsModules } from "./modules.js";
 
+new VenoBox({
+  selector: ".index-gallery__item"
+});
+
 const anchorLink = document.querySelectorAll("[data-anchor]");
 if (anchorLink) {
   anchorLink.forEach((item) => {

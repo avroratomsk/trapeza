@@ -40,6 +40,39 @@ main {
   }
 }
 
+.title--dark{
+  font-size: clamp(25px, 3vw, 45px);
+  font-weight: 300;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: $fontFamily;
+  
+  &::before{
+    content: '';
+    background-image: url(../img/icon/i-decor-title-left-darkblue.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  &::after{
+    content: '';
+    background-image: url(../img/icon/i-decor-title-right-darkblue.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+  }
+}
+
 .anchor-scroll {
   display: flex;
   align-items: center;
