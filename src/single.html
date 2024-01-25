@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ru" class="">
+@@include('html/_head.htm',{ "title":"Обеды" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-single.htm',{})
+    <main class="page">
+      <section class="single">
+        <div class="single__container">
+          <div class="products__top title-page">
+            <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <a href="/" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+                class="breadcrumbs__item">
+                Главная
+                <meta itemprop="position" content="1">
+              </a>
+              <a href="/" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
+                class="breadcrumbs__item">
+                Продукция
+                <meta itemprop="position" content="2">
+              </a>
+              <span itemprop="name" class="breadcrumbs__item">
+                Ежедневное меню
+                <meta itemprop="position" content="3">
+              </span>
+            </div>
+            <h1 class="products__title title-page__title">
+              Ежедневное меню
+            </h1>
+          </div>
+
+          <section class="single__day day-single">
+            <div class="day-single__inner">
+              <button type="button" id="open-search" class="day-single__btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <div class="day-single__days">
+                <a href="#" data-day="" class="day-single__day">Понедельник</a>
+                <a href="#" data-day="" class="day-single__day">Вторник</a>
+                <a href="#" data-day="" class="day-single__day">Среда</a>
+                <a href="#" data-day="" class="day-single__day _active">Четверг</a>
+                <a href="#" data-day="" class="day-single__day">Пятница</a>
+                <a href="#" data-day="" class="day-single__day">Суббота</a>
+                <div class="search" id="single-search">
+                  <form action="">
+                    <input type="search" name="search" placeholder="Поиск" class="form-controls">
+                    <button type="submit">Найти</button>
+                  </form>
+                </div>
+              </div>
+              <button type="button" id="open-filter" class="day-single__btn">
+                <i class="fa-solid fa-sliders"></i>
+              </button>
+              <div class="filter-sort" id="filter-sort">
+                <input type="hidden" name="filter-value" id="filter-value" value="">
+                <div class="filter-sort__value _active">По умолчанию</div>
+                <div class="filter-sort__value">По убыванию</div>
+                <div class="filter-sort__value">По возрастанию</div>
+              </div>
+            </div>
+          </section>
+
+          <div class="single-content">
+            <aside class="single-content__aside aside">
+              <div class="aside__options" id="option-part">
+                <h5 class="aside__title">Раздел</h5>
+                <div class="aside__filter">
+                  <input type="hidden" value="" class="aside__filter-hidden">
+                  <ul class="aside__list">
+                    <li class="aside__item _active">Первые блюда</li>
+                    <li class="aside__item">Вторые блюда</li>
+                    <li class="aside__item">Выпечка</li>
+                    <li class="aside__item">Гарниры</li>
+                    <li class="aside__item">Салаты</li>
+                    <li class="aside__item">Напитки</li>
+                    <li class="aside__item">Добавки к блюду</li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+            <div class="single-content__products products-single">
+              <div class="products-single__grid">
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/about.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+                <div class="card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          @@include('html/_pagging.htm',{})
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
+</html>

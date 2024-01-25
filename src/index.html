@@ -6,7 +6,7 @@
   <div class="wrapper">
     @@include('html/_header.htm',{})
     <main class="page">
-      @@include('html/side-menu.html',{})
+
 
       <div class="index-banner" style="background-image: url(../img/banner-first-3.jpg);">
         <div class="index-banner__container">
@@ -21,83 +21,7 @@
         </div>
       </div>
 
-      <div class="index-service">
-        <button type="button" class="index-service__union" style="background-image: url(../img/Union.svg);">
-          <span><img src="@img/icon/i-chevron-down.svg" alt=""></span>
-        </button>
-        <div class="index-service__container">
-          <div class="index-service__grid">
-            <a href="#" class="index-service__item item-service">
-              <div class="item-service__top">
-                <p class="item-service__title">Меню на каждый день</p>
-                <div class="item-service__icon">
-                  <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="item-service__text">
-                Горячие обеды, ароматной выпечки, салаты и много другого
-              </div>
-              <div class="item-service__image">
-                <img src="@img/2_6.jpg" alt="">
-              </div>
-            </a>
-            <a href="#" class="index-service__item item-service">
-              <div class="item-service__top">
-                <p class="item-service__title">Организовать банкет</p>
-                <div class="item-service__icon">
-                  <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="item-service__text">
-                Организуем и оформим любое мероприятие
-              </div>
-              <div class="item-service__image">
-                <img src="@img/2_5.jpg" alt="">
-              </div>
-            </a>
-            <a href="#" class="index-service__item item-service">
-              <div class="item-service__top">
-                <p class="item-service__title">Прийти поесть</p>
-                <div class="item-service__icon">
-                  <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="item-service__text">
-                Столовая "Трапеза" всегда рада гостям
-              </div>
-              <div class="item-service__image">
-                <img src="@img//bunket-image.jpg" alt="">
-              </div>
-            </a>
-            <a href="#" class="index-service__item item-service">
-              <div class="item-service__top">
-                <p class="item-service__title">Обеды памяти</p>
-                <div class="item-service__icon">
-                  <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="item-service__text">
-                Мы рядом с вами даже в самые тяжелые моменты
-              </div>
-              <div class="item-service__image">
-                <img src="@img/2_2.jpg" alt="">
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
+      @@include('html/category.html',{})
 
       <div class="index-catalog">
         <div class="index-catalog__container">
@@ -112,70 +36,81 @@
             </div>
             <div class="tab__content">
               <div class="tab__content-grid" data-id="all">
-                <div class="tab__content-item">
-                  <div class="tab__content-image">
+                <div class="tab__content-item card-product">
+                  <a href="#" class="card-product__image">
                     <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </div>
-                  <a href="#" class="tab__content-name">Блинчики</a>
-                  <p class="tab__content-price">85₽</p>
-                  <div class="tab__content-btns">
-                    <a href="#" class="tab__content-btn">Подробнее</a>
-                    <a href="#" class="tab__content-btn">Описание</a>
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
                   </div>
                 </div>
-                <div class="tab__content-item">
-                  <div class="tab__content-image">
+                <div class="tab__content-item card-product">
+                  <a href="#" class="card-product__image">
                     <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </div>
-                  <a href="#" class="tab__content-name">Блинчики</a>
-                  <p class="tab__content-price">85₽</p>
-                  <div class="tab__content-btns">
-                    <a href="#" class="tab__content-btn">Подробнее</a>
-                    <a href="#" class="tab__content-btn">Описание</a>
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
                   </div>
                 </div>
-                <div class="tab__content-item">
-                  <div class="tab__content-image">
+                <div class="tab__content-item card-product">
+                  <a href="#" class="card-product__image">
                     <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </div>
-                  <a href="#" class="tab__content-name">Блинчики</a>
-                  <p class="tab__content-price">85₽</p>
-                  <div class="tab__content-btns">
-                    <a href="#" class="tab__content-btn">Подробнее</a>
-                    <a href="#" class="tab__content-btn">Описание</a>
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
                   </div>
                 </div>
-                <div class="tab__content-item">
-                  <div class="tab__content-image">
+                <div class="tab__content-item card-product">
+                  <a href="#" class="card-product__image">
                     <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </div>
-                  <a href="#" class="tab__content-name">Блинчики</a>
-                  <p class="tab__content-price">85₽</p>
-                  <div class="tab__content-btns">
-                    <a href="#" class="tab__content-btn">Подробнее</a>
-                    <a href="#" class="tab__content-btn">Описание</a>
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
                   </div>
                 </div>
-                <div class="tab__content-item">
-                  <div class="tab__content-image">
+                <div class="tab__content-item card-product">
+                  <a href="#" class="card-product__image">
                     <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </div>
-                  <a href="#" class="tab__content-name">Блинчики</a>
-                  <p class="tab__content-price">85₽</p>
-                  <div class="tab__content-btns">
-                    <a href="#" class="tab__content-btn">Подробнее</a>
-                    <a href="#" class="tab__content-btn">Описание</a>
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
                   </div>
                 </div>
-                <div class="tab__content-item">
-                  <div class="tab__content-image">
+                <div class="tab__content-item card-product">
+                  <a href="#" class="card-product__image">
                     <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
                   </div>
-                  <a href="#" class="tab__content-name">Блинчики</a>
-                  <p class="tab__content-price">85₽</p>
-                  <div class="tab__content-btns">
-                    <a href="#" class="tab__content-btn">Подробнее</a>
-                    <a href="#" class="tab__content-btn">Описание</a>
+                </div>
+                <div class="tab__content-item card-product">
+                  <a href="#" class="card-product__image">
+                    <img src="@img/menu/food-1.jpg" alt="" title="">
+                  </a>
+                  <a href="#" class="card-product__name">Блинчики</a>
+                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__btns">
+                    <a href="#" class="card-product__btn">Подробнее</a>
+                    <a href="#" class="card-product__btn">Описание</a>
                   </div>
                 </div>
               </div>
@@ -386,36 +321,7 @@
         </div>
       </div>
 
-      <div class="map" style="background-image: url(../img/map.jpeg);">
-        <div class="map__container">
-          <div class="map__inner">
-            <div class="map__content">
-              <div class="map__contact">
-                <p class="map__title">Столовая Трапеза</p>
-                <div class="map__contact-items">
-                  <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-                  <p>ул.Ленина 193</p>
-                  <a href="mailto:trapeza@mail.ru">trapeza@mail.ru</a>
-                  <a href="#">WhatsApp</a>
-                  <a href="#">Telegram</a>
-                  <a href="#">Viber</a>
-                </div>
-              </div>
-              <div class="map__callback">
-                <div class="map__callback-row">
-                  <div class="map__callback-avatar">
-                    <img src="@img/face.png" alt="">
-                  </div>
-                  <div class="map__callback-action">
-                    <p>Связаться с менеджером</p>
-                    <button type="button">Написать</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      @@include('html/contact.html',{})
     </main>
     @@include('html/_footer.htm',{})
   </div>

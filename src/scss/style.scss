@@ -13,6 +13,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&family=Ruslan+Display&display=swap');
 @import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 // Подключить если есть локальные файлы шрифтов
 @import "fonts/fonts";
@@ -23,8 +24,9 @@
 
 // Шрифт по умолчанию ==============================================================================================================================================================================================================================================================================
 // $fontFamily: "Comfortaa", sans-serif;
-// $fontFamily: "Monologue";
-$fontFamily: 'Ruslan Display', sans-serif;;
+$victorMono: 'Victor Mono', monospace;
+$fontFamily: 'Victor Mono', monospace;
+$ruslanDisplay: 'Ruslan Display', sans-serif;
 // $secondaryFont: "Train One", cursive;
 // $secondaryFont: "TildaSans";
 $secondaryFont: "Nunito";
@@ -43,7 +45,7 @@ $mainColor: #253746; // Цвет шрифта по умолчанию
 $white: #ffffff;
 $accent: #9ac27c;
 $grey: #939297;
-$orange: #ff6d00;
+$orange: #e76642;
 $lightBlue: #d4e9f5;
 $greenAplle: #59ce65;
 $animation_speed: 0.5s;
@@ -77,6 +79,7 @@ $responsiveType: 1;
 @import "base/null";
 
 body {
+
   // overflow-x: hidden;
   // Скролл заблокирован
   .lock & {
@@ -84,8 +87,7 @@ body {
   }
 
   // Сайт загружен
-  .loaded & {
-  }
+  .loaded & {}
 }
 
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
@@ -96,12 +98,12 @@ body {
   position: relative;
 
   // Прижимаем footer
-  > main {
+  >main {
     flex: 1 1 auto;
   }
 
   // Фикс для слайдеров
-  > * {
+  >* {
     min-width: 0;
   }
 }
@@ -115,6 +117,7 @@ body {
 Снипет (HTML): cnt
 */
 @if ($responsiveType==1) {
+
   // Отзывчивая
   [class*="__container"] {
     @if ($maxWidthContainer>0) {
@@ -127,7 +130,10 @@ body {
       padding: 0 rem(math.div($containerPadding, 2));
     }
   }
-} @else {
+}
+
+@else {
+
   // По брейк-поинтам
   [class*="__container"] {
     margin: 0 auto;
@@ -135,7 +141,9 @@ body {
     @if ($maxWidthContainer>0) {
       max-width: rem($maxWidthContainer);
       box-sizing: content-box;
-    } @else {
+    }
+
+    @else {
       @if ($containerPadding>0) {
         padding: 0 rem(math.div($containerPadding, 2));
       }
@@ -172,7 +180,11 @@ body {
 @import "footer";
 @import "side-menu";
 @import "popup-menu";
+@import "block/breadcrumbs";
 
 // Подключение стилей отдельных страниц
 @import "home";
 @import "base/select";
+@import "base/pagging";
+@import "pages/single";
+@import "pages/products";
