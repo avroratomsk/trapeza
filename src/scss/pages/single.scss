@@ -71,7 +71,12 @@
 
   // .aside__options
 
-  &__options {}
+  &__options {
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 
   // .aside__title
 

@@ -4711,6 +4711,22 @@
         document.getElementById("filter-sort").classList.toggle("_active");
         if (!this.classList.contains("_active")) this.innerHTML = '<i class="fa-solid fa-sliders"></i>'; else this.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     }));
+    const rangeInput = document.querySelectorAll(".price-input__range input");
+    const priceInputField = document.querySelectorAll(".price-input__field input");
+    const progress = document.querySelector("#prodgress");
+    const priceGap = 1e3;
+    if (rangeInput) rangeInput.forEach((input => {
+        input.addEventListener("input", (e => {
+            const minValue = parseInt(rangeInput[0].value);
+            const maxValue = parseInt(rangeInput[1].value);
+            if (maxValue - minValue < priceGap) if (e.target.className === "price-input__range-min") rangeInput[0].value = maxValue - priceGap; else rangeInput[1].value = minValue + priceGap; else {
+                priceInputField[0].value = minValue;
+                priceInputField[1].value = maxValue;
+                progress.style.left = minValue / rangeInput[0].max * 100 + "%";
+                progress.style.right = 100 - maxValue / rangeInput[1].max * 100 + "%";
+            }
+        }));
+    }));
     window["FLS"] = true;
     isWebp();
     menuInit();

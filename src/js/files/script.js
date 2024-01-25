@@ -10,6 +10,8 @@ new VenoBox({
 
 /**
  * Функция отктия и закрытия строку поиска  и фильтрацию по убыванию/возрастанию
+ * 
+ * Оптимизировать код
  */
 
 const openSearchBtn = document.getElementById('open-search');
@@ -37,5 +39,42 @@ if (openFilterBtn) {
     } else {
       this.innerHTML = '<i class="fa-solid fa-xmark"></i>';
     }
+  })
+}
+
+/**
+ * Фильтр по цене 
+ * 
+ * Разобраться в скрипке 
+ */
+
+const rangeInput = document.querySelectorAll(".price-input__range input");
+const priceInputField = document.querySelectorAll(".price-input__field input");
+const progress = document.querySelector('#prodgress');
+const priceGap = 1000;
+
+
+if (rangeInput) {
+  rangeInput.forEach(input => {
+    input.addEventListener('input', (e) => {
+      const minValue = parseInt(rangeInput[0].value);
+      const maxValue = parseInt(rangeInput[1].value);
+
+      if (maxValue - minValue < priceGap) {
+        if (e.target.className === "price-input__range-min") {
+          rangeInput[0].value = maxValue - priceGap;
+        } else {
+          rangeInput[1].value = minValue + priceGap;
+        }
+      } else {
+        priceInputField[0].value = minValue;
+        priceInputField[1].value = maxValue;
+        progress.style.left = (minValue / rangeInput[0].max) * 100 + "%";
+        progress.style.right = 100 - (maxValue / rangeInput[1].max) * 100 + "%";
+      }
+
+
+    })
+
   })
 }

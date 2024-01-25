@@ -169,6 +169,120 @@ section {
   }
 }
 
+.aside {
+
+  // .aside__options
+
+  &__options {}
+
+  // .aside__title
+
+  &__title {}
+}
+
+.price-input {
+
+  // .price-input__fields
+
+  &__fields {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba($color: $mainColor, $alpha: .1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  // .price-input__field
+
+  &__field {
+
+    input[type="number"] {
+      width: 100%;
+      height: 40px;
+      text-align: center;
+      border: 1px solid rgba($color: $mainColor, $alpha: 0);
+      color: $mainColor;
+      background-color: transparent;
+      appearance: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .separator {
+    display: block;
+    width: 1px;
+    height: 40px;
+    margin: 0px 1px;
+    background-color: rgba($color: $mainColor, $alpha: .1);
+  }
+
+  // .price-input__min
+
+  &__min {}
+
+  // .price-input__max
+
+  &__max {}
+
+  // .price-input__slider
+
+  &__slider {
+    margin-top: 20px;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    background-color: rgba($color: $mainColor, $alpha: .1);
+  }
+
+  // .price-input__progress
+
+  &__progress {
+    height: 5px;
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    border-radius: 5px;
+    background-color: $orange;
+  }
+
+  // .price-input__range
+  &__range {
+    position: relative;
+
+    input {
+      position: absolute;
+      top: -5px;
+      height: 5px;
+      width: 100%;
+      background: none;
+      appearance: none;
+      pointer-events: none;
+
+      &::-webkit-slider-thumb {
+        height: 17px;
+        width: 17px;
+        border-radius: 50%;
+        pointer-events: auto;
+        appearance: none;
+        border: none;
+        background-color: rgba($color: $orange, $alpha: 1.0);
+      }
+    }
+  }
+
+  // .price-input__range-min
+  &__range-min {}
+
+  // .price-input__range-max
+  &__range-max {}
+}
+
+
+
+
 
 
 .title-page {
