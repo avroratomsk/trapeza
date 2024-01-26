@@ -569,83 +569,96 @@
   }
 }
 
-.about {
-  padding: 100px 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
+.index-about {
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($color: $mainColor, $alpha: 0.8);
+  @media screen and (min-width: 992px) {
+    display: flex;
   }
 
-  // .about__container
+  // .index-about__content
+
+  &__content {
+    flex: 0 0 100%;
+  }
+
+  // .index-about__container
 
   &__container {
-    position: relative;
-    z-index: 2;
-  }
-
-  // .about__title
-
-  &__title {
-    text-align: center;
-    color: $bodyColor;
-  }
-
-  // .about__inner
-
-  &__inner {
+    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
 
-  // .about__image
+  // .index-about__body
 
-  &__image {
-    img {
-      max-width: 100%;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 0px 50px 0px;
+
+    @media screen and (min-width: 992px) {
+      padding: 0px 50px 0px 0px;
+      width: 50%;
     }
   }
 
-  // .about__content
+  // .index-about__title
 
-  &__content {
-    font-family: $secondaryFont;
-    color: $bodyColor;
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 150%;
+  &__title {
+    margin-bottom: 40px;
   }
 
-  // .about__btn
-  &__btn {
-    margin-top: 50px;
+  // .index-about__subtitle
+
+  &__text {
+    font-size: clamp(16px, 1.5vw, 17px);
+    line-height: 150%;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  // .index-about__link
+  &__link {
+    background-color: $orange;
+    padding: 20px 20px;
     width: 290px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $bodyColor;
-    font-size: 16px;
-    border-radius: 8px;
-    background-color: #e76642;
-    font-family: $secondaryFont;
-    font-weight: 600;
-    transition: $animation_speed;
+    color: $white;
+    border-radius: 6px;
+    margin-top: 30px;
+  }
 
-    &:hover {
-      background-color: $white;
-      color: $mainColor;
+  // .index-about__image
+
+  &__image {
+    padding: 0 15px 0px 15px;
+    box-shadow: 0px 0px 10px rgba($color: $mainColor, $alpha: 1.0);
+    overflow: hidden;
+    border-radius: 50% 0px 0px 50%;
+
+    @media screen and (min-width: 992px) {
+      flex: 0 0 50%;
+      transform: translate(-100%, 0);
+      position: relative;
+      padding: 0 0 40% 0;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    img {
+      max-width: 100%;
     }
   }
 }

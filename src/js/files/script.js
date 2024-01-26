@@ -78,3 +78,22 @@ if (rangeInput) {
 
   })
 }
+
+
+/**
+ * Рейтинг в виде звездочек
+ */
+
+const ratingItemList = document.querySelectorAll('.form__star');
+const inputSaveRating = document.querySelector('#form-reviews__rating');
+if (ratingItemList) {
+  const ratingItemArray = Array.prototype.slice.call(ratingItemList);
+
+  ratingItemArray.forEach(item => {
+    item.addEventListener('click', function (e) {
+      const { rating } = item.dataset;
+      item.parentNode.dataset.ratingTotal = rating;
+      // inputSaveRating.value = rating;
+    })
+  })
+}

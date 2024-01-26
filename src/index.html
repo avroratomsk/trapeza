@@ -27,12 +27,13 @@
         <div class="index-catalog__container">
           <h2 class="index-catalog__title title--dark">Меню</h2>
           <div class="index-catalog__tab tab">
-            <div class="tab__head">
-              <button type="button" class="tab__trigger active" data-id="all">Всё</button>
-              <button type="button" class="tab__trigger" data-id="breakfast">Завраки</button>
-              <button type="button" class="tab__trigger" data-id="dinner">Обеды</button>
-              <button type="button" class="tab__trigger" data-id="day">Меню дня</button>
-              <button type="button" class="tab__trigger" data-id="funeral">Поминальное меню</button>
+            <div class="day-single__days">
+              <a href="#" data-day="" class="day-single__day">Понедельник</a>
+              <a href="#" data-day="" class="day-single__day">Вторник</a>
+              <a href="#" data-day="" class="day-single__day">Среда</a>
+              <a href="#" data-day="" class="day-single__day _active">Четверг</a>
+              <a href="#" data-day="" class="day-single__day">Пятница</a>
+              <a href="#" data-day="" class="day-single__day">Суббота</a>
             </div>
             <div class="tab__content">
               <div class="tab__content-grid" data-id="all">
@@ -119,20 +120,31 @@
         </div>
       </div>
 
-      <div class="about" style="background-image: url(../img/about.jpg)">
-        <div class="about__container">
-          <h2 class="about__title title">О нас</h2>
-          <div class="about__inner">
-            <div class="about__content">
-              <p>
-                Кафе-Столовая Трапеза – это высокопрофессиональная команда специалистов, на счету которой десятки
-                проведенных банкетов, отмеченных восхищенными отзывами гостей. Мы достигли этого благодаря особому
-                подходу к организации кухни и планированию мероприятий. Мы считаем, что в нашей работе нет мелочей,
-                только главные детали!
-              </p>
+      <div class="index-about">
+        <div class="index-about__content">
+          <div class="index-about__container">
+            <div class="index-about__body">
+              <h2 class="index-about__title">Немного о нас</h2>
+              <div class="index-about__text">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut autem inventore hic quibusdam,
+                  sequi consequatur corporis, earum doloremque aspernatur optio assumenda nulla quae tempora debitis
+                  ducimus. Labore, aliquam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut
+                  autem inventore hic quibusdam, sequi consequatur corporis, earum doloremque aspernatur optio
+                  assumenda nulla quae tempora debitis ducimus. Labore, aliquam dolorem!
+                </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut autem inventore hic quibusdam,
+                  sequi consequatur corporis, earum doloremque aspernatur optio assumenda nulla quae tempora debitis
+                  ducimus. Labore, aliquam dolorem!
+                </p>
+              </div>
+              <a href="#" class="btn index-about__link">Подробнее</a>
             </div>
-            <a href="" class="about__btn">Подробнее о нас</a>
           </div>
+        </div>
+        <div class="index-about__image">
+          <img src="@img/about.jpg" alt="" title="" />
         </div>
       </div>
 
