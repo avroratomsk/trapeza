@@ -23,6 +23,7 @@ section {
 }
 
 .card-product {
+  position: relative;
   padding: 10px;
   border-radius: 8px;
   transition: $animation_speed;
@@ -279,11 +280,6 @@ section {
   // .price-input__range-max
   &__range-max {}
 }
-
-
-
-
-
 
 .title-page {
 
