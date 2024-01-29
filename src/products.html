@@ -4,90 +4,51 @@
 
 <body>
   <div class="wrapper">
-    @@include('html/_header.htm',{})
+    @@include('html/_header-single.htm',{})
     <main class="page">
       <section class="products">
         <div class="products__container">
           <div class="products__top title-page">
-            @@include('html/breadcrumbs.html',{ "title":"Категории меню" })
-            <h1 class="products__title title-page__title">
-              Виды меню
-            </h1>
+            @@include('html/breadcrumbs.html',{ "title":"Категории" })
+            <h1 class="products__title title-page__title">Меню</h1>
           </div>
-          <div class="index-service">
-            <div class="index-service__container">
-              <div class="index-service__grid">
-                <a href="#" class="index-service__item item-service">
-                  <div class="item-service__top">
-                    <p class="item-service__title">Меню на каждый день</p>
-                    <div class="item-service__icon">
-                      <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="item-service__text">
-                    Горячие обеды, ароматной выпечки, салаты и много другого
-                  </div>
-                  <div class="item-service__image">
-                    <img src="@img/2_6.jpg" alt="">
+          <section class="service">
+            <div class="service__container">
+              <div class="service__row">
+                <a href="#" class="service__item">
+                  <img src="@img/about.jpg" alt="" title="" class="service__item-image">
+                  <div class="service__item-content">
+                    <span>Ежедневное меню</span>
+                    <span><i class="fa-solid fa-arrow-right-long"></i></span>
                   </div>
                 </a>
-                <a href="#" class="index-service__item item-service">
-                  <div class="item-service__top">
-                    <p class="item-service__title">Организовать банкет</p>
-                    <div class="item-service__icon">
-                      <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="item-service__text">
-                    Организуем и оформим любое мероприятие
-                  </div>
-                  <div class="item-service__image">
-                    <img src="@img/2_5.jpg" alt="">
+                <a href="#" class="service__item">
+                  <img src="@img/menu/pominki.jpg" alt="" title="" class="service__item-image">
+                  <div class="service__item-content">
+                    <span>Поминальное меню</span>
+                    <span><i class="fa-solid fa-arrow-right-long"></i></span>
                   </div>
                 </a>
-                <a href="#" class="index-service__item item-service">
-                  <div class="item-service__top">
-                    <p class="item-service__title">Прийти поесть</p>
-                    <div class="item-service__icon">
-                      <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="item-service__text">
-                    Столовая "Трапеза" всегда рада гостям
-                  </div>
-                  <div class="item-service__image">
-                    <img src="@img//bunket-image.jpg" alt="">
+              </div>
+
+              <div class="service__grid">
+                <a href="#" class="service__item">
+                  <img src="@img/about.jpg" alt="Ежедневное меню" title="Ежедневное меню" class="service__item-image">
+                  <div class="service__item-content">
+                    <span>Ежедневное меню</span>
+                    <span><i class="fa-solid fa-arrow-right-long"></i></span>
                   </div>
                 </a>
-                <a href="#" class="index-service__item item-service">
-                  <div class="item-service__top">
-                    <p class="item-service__title">Обеды памяти</p>
-                    <div class="item-service__icon">
-                      <svg role="presentation" class="t959__card-arrow " width="14" height="24" viewBox="0 0 14 24"
-                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0.994385L12 11.9944L1 22.9944" stroke="#6c7c40" stroke-width="2"></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <div class="item-service__text">
-                    Мы рядом с вами даже в самые тяжелые моменты
-                  </div>
-                  <div class="item-service__image">
-                    <img src="@img/2_2.jpg" alt="">
+                <a href="#" class="service__item">
+                  <img src="@img/about.jpg" alt="" title="" class="service__item-image">
+                  <div class="service__item-content">
+                    <span>Ежедневное меню</span>
+                    <span><i class="fa-solid fa-arrow-right-long"></i></span>
                   </div>
                 </a>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </section>
       @@include('html/contact.html',{})

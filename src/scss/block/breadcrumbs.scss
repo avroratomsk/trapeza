@@ -1,6 +1,8 @@
 .breadcrumbs {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 
   // .breadcrumbs__item
 
@@ -22,7 +24,7 @@
     }
 
     &:last-child {
-      opacity: .8;
+      font-weight: 600;
     }
   }
 }

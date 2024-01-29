@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru" class="">
+@@include('html/_head.htm',{ "title":"Акции" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header-single.htm',{})
+
+    <main class="page">
+      <div class="single-banner" style="background-image: url(../img/stock.jpg)" data-speed="70">
+        <h1 class="stock__title _title">Скидки и Акции</h1>
+        @@include('html/breadcrumbs.html',{ "title":"Акции" })
+      </div>
+      <section class="stock">
+        <div class="stock__container">
+          <div class="stock__inner">
+            <div class="stock__row">
+              <div class="stock__col">
+                <div class="stock__image">
+                  <img src="@img/about.jpg" alt="" title="">
+                </div>
+              </div>
+              <div class="stock__col">
+                <div class="stock__col-content">
+                  <h3 class="stock__col-title">Первая акция, акиця дня купи и получи скидку</h3>
+                  <p class="stock__col-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse quis tenetur commodi quam ipsum,
+                    consequatur iusto odit! Voluptatum quia, rem repudiandae qui cumque doloribus beatae impedit illo
+                    reprehenderit suscipit.
+                  </p>
+                  <a href="#" class="stock__col-link">Читать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="stock__row">
+              <div class="stock__col">
+                <div class="stock__image">
+                  <img src="@img/about.jpg" alt="" title="">
+                </div>
+              </div>
+              <div class="stock__col">
+                <div class="stock__col-content">
+                  <h3 class="stock__col-title">Вторая акция, акиця дня купи и получи скидку</h3>
+                  <p class="stock__col-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse quis tenetur commodi quam ipsum,
+                    consequatur iusto odit! Voluptatum quia, rem repudiandae qui cumque doloribus beatae impedit illo
+                    reprehenderit suscipit.
+                  </p>
+                  <a href="#" class="stock__col-link">Читать больше</a>
+                </div>
+              </div>
+            </div>
+            <div class="stock__row">
+              <div class="stock__col">
+                <div class="stock__image">
+                  <img src="@img/about.jpg" alt="" title="">
+                </div>
+              </div>
+              <div class="stock__col">
+                <div class="stock__col-content">
+                  <h3 class="stock__col-title">Третья акция, акиця дня купи и получи скидку</h3>
+                  <p class="stock__col-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non esse quis tenetur commodi quam ipsum,
+                    consequatur iusto odit! Voluptatum quia, rem repudiandae qui cumque doloribus beatae impedit illo
+                    reprehenderit suscipit.
+                  </p>
+                  <a href="#" class="stock__col-link">Читать больше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      @@include('html/contact.html',{})
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+</body>
+
+</html>

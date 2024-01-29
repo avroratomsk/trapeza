@@ -1,3 +1,9 @@
+.page-contact {
+  .contact__title {
+    text-align: center;
+  }
+}
+
 .contact {
 
   // .contact__container
@@ -117,7 +123,7 @@
     width: 100%;
     padding: 17px 20px;
     border: 1px solid rgba($color: $mainColor, $alpha: .2);
-    border-radius: 6px;
+    border-radius: 4px;
 
     &:focus {
       outline: none;

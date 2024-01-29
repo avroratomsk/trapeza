@@ -163,7 +163,7 @@
 
 .item-service {
   overflow: hidden;
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: #fff;
   box-shadow: 0 0 4px 2px rgba($color: $mainColor, $alpha: .05);
@@ -242,6 +242,116 @@
     }
   }
 }
+
+.service {
+
+  // .service__container
+
+  &__container {}
+
+
+
+  // .service__row
+
+  &__row {
+    display: grid;
+    gap: 20px;
+  }
+
+  // .service__grid
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  // .service__item-content
+  &__item-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  // .service__item
+
+  &__item {
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 400px;
+    padding: 40px;
+    box-shadow: 0 0 4px 2px rgba($color: $mainColor, $alpha: .05);
+    border: 10px solid rgba($color: $bodyColor, $alpha: .1);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: rgba($color: $white, $alpha: 1.0);
+    position: relative;
+    transition: background-size $animation_speed;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: $mainColor, $alpha: .2);
+    }
+
+    span {
+      position: relative;
+      z-index: 2;
+
+      &:first-child {
+        font-size: 28px;
+      }
+
+      &:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        border: 1px solid rgba($color: $white, $alpha: 1.0);
+        transform: rotate(-45deg);
+        transition: $animation_speed;
+      }
+    }
+
+
+    &:hover {
+
+      .service__item-image {
+        transform: scale(1.01);
+      }
+
+      span {
+        &:last-child {
+          transform: rotate(0) !important;
+        }
+      }
+    }
+  }
+
+  // .service__item-image
+
+  &__item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: $animation_speed;
+  }
+}
+
 
 
 .index-catalog {

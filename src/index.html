@@ -1,343 +1,341 @@
 <!doctype html>
 <html lang="ru" class="">
-@@include('html/_head.htm',{ "title":"Главная" })
+  @@include('html/_head.htm',{ "title":"Главная" })
 
-<body>
-  <div class="wrapper">
-    @@include('html/_header.htm',{})
-    <main class="page">
-
-
-      <div class="index-banner" style="background-image: url(../img/banner-first-3.jpg);">
-        <div class="index-banner__container">
-          <div class="index-banner__content">
-            <p class="index-banner__undertitle">столовая по-домашнему</p>
-            <h1 class="index-banner__title">трапеза</h1>
-            <div class="index-banner__btns">
-              <a href="#" class="index-banner__btn btn">Перейти в меню</a>
-              <a href="#" class="index-banner__btn btn">Связаться</a>
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="page">
+        <div class="index-banner" style="background-image: url(../img/banner-first-3.jpg)">
+          <div class="index-banner__container">
+            <div class="index-banner__content">
+              <p class="index-banner__undertitle">столовая по-домашнему</p>
+              <h1 class="index-banner__title">трапеза</h1>
+              <div class="index-banner__btns">
+                <a href="#" class="index-banner__btn btn">Перейти в меню</a>
+                <a href="#" class="index-banner__btn btn">Связаться</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      @@include('html/category.html',{})
-
-      <div class="index-catalog">
-        <div class="index-catalog__container">
-          <h2 class="index-catalog__title title--dark">Меню</h2>
-          <div class="index-catalog__tab tab">
-            <div class="day-single__days">
-              <a href="#" data-day="" class="day-single__day">Понедельник</a>
-              <a href="#" data-day="" class="day-single__day">Вторник</a>
-              <a href="#" data-day="" class="day-single__day">Среда</a>
-              <a href="#" data-day="" class="day-single__day _active">Четверг</a>
-              <a href="#" data-day="" class="day-single__day">Пятница</a>
-              <a href="#" data-day="" class="day-single__day">Суббота</a>
-            </div>
-            <div class="tab__content">
-              <div class="tab__content-grid" data-id="all">
-                <div class="tab__content-item card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+        <div class="index-catalog">
+          <div class="index-catalog__container">
+            <h2 class="index-catalog__title title--dark">Меню</h2>
+            <div class="index-catalog__tab tab">
+              <div class="day-single__days">
+                <a href="#" data-day="" class="day-single__day">Понедельник</a>
+                <a href="#" data-day="" class="day-single__day">Вторник</a>
+                <a href="#" data-day="" class="day-single__day">Среда</a>
+                <a href="#" data-day="" class="day-single__day _active">Четверг</a>
+                <a href="#" data-day="" class="day-single__day">Пятница</a>
+                <a href="#" data-day="" class="day-single__day">Суббота</a>
+              </div>
+              <div class="tab__content">
+                <div class="tab__content-grid" data-id="all">
+                  <div class="tab__content-item card-product">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/food-1.jpg" alt="" title="" />
+                    </a>
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <div class="card-product__btns">
+                      <a href="#" class="card-product__btn">Подробнее</a>
+                      <a href="#" class="card-product__btn">Описание</a>
+                    </div>
                   </div>
-                </div>
-                <div class="tab__content-item card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                  <div class="tab__content-item card-product">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/food-1.jpg" alt="" title="" />
+                    </a>
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <div class="card-product__btns">
+                      <a href="#" class="card-product__btn">Подробнее</a>
+                      <a href="#" class="card-product__btn">Описание</a>
+                    </div>
                   </div>
-                </div>
-                <div class="tab__content-item card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                  <div class="tab__content-item card-product">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/food-1.jpg" alt="" title="" />
+                    </a>
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <div class="card-product__btns">
+                      <a href="#" class="card-product__btn">Подробнее</a>
+                      <a href="#" class="card-product__btn">Описание</a>
+                    </div>
                   </div>
-                </div>
-                <div class="tab__content-item card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                  <div class="tab__content-item card-product">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/food-1.jpg" alt="" title="" />
+                    </a>
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <div class="card-product__btns">
+                      <a href="#" class="card-product__btn">Подробнее</a>
+                      <a href="#" class="card-product__btn">Описание</a>
+                    </div>
                   </div>
-                </div>
-                <div class="tab__content-item card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                  <div class="tab__content-item card-product">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/food-1.jpg" alt="" title="" />
+                    </a>
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <div class="card-product__btns">
+                      <a href="#" class="card-product__btn">Подробнее</a>
+                      <a href="#" class="card-product__btn">Описание</a>
+                    </div>
                   </div>
-                </div>
-                <div class="tab__content-item card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                  <div class="tab__content-item card-product">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/food-1.jpg" alt="" title="" />
+                    </a>
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <div class="card-product__btns">
+                      <a href="#" class="card-product__btn">Подробнее</a>
+                      <a href="#" class="card-product__btn">Описание</a>
+                    </div>
                   </div>
-                </div>
-                <div class="tab__content-item card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                  <div class="tab__content-item card-product">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/food-1.jpg" alt="" title="" />
+                    </a>
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <div class="card-product__btns">
+                      <a href="#" class="card-product__btn">Подробнее</a>
+                      <a href="#" class="card-product__btn">Описание</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="index-about">
-        <div class="index-about__content">
-          <div class="index-about__container">
-            <div class="index-about__body">
-              <h2 class="index-about__title">Немного о нас</h2>
-              <div class="index-about__text">
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut autem inventore hic quibusdam,
-                  sequi consequatur corporis, earum doloremque aspernatur optio assumenda nulla quae tempora debitis
-                  ducimus. Labore, aliquam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut
-                  autem inventore hic quibusdam, sequi consequatur corporis, earum doloremque aspernatur optio
-                  assumenda nulla quae tempora debitis ducimus. Labore, aliquam dolorem!
-                </p>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut autem inventore hic quibusdam,
-                  sequi consequatur corporis, earum doloremque aspernatur optio assumenda nulla quae tempora debitis
-                  ducimus. Labore, aliquam dolorem!
-                </p>
-              </div>
-              <a href="#" class="btn index-about__link">Подробнее</a>
-            </div>
-          </div>
-        </div>
-        <div class="index-about__image">
-          <img src="@img/about.jpg" alt="" title="" />
-        </div>
-      </div>
-
-      <div class="reviews">
-        <div class="reviews__container">
-          <div class="reviews__inner">
-            <div class="reviews__block-top">
-              <h2 class="reviews__title title--dark">Отзывы клиентов</h2>
-            </div>
-            <div class="reviews__slider swiper">
-              <div class="reviews__wrapper swiper-wrapper">
-                <div class="reviews__slide swiper-slide">
-                  <div class="reviews__quote">"</div>
-                  <div class="reviews__top">
-                    <div class="reviews__avatar">
-                      <img src="@img/face-1.jpg" alt="" />
-                    </div>
-                    <div class="reviews__name">
-                      <p>Иван Сидоров</p>
-                      <span>12.12.2023</span>
-                    </div>
-                  </div>
-                  <div class="reviews__bottom">
-                    <div class="reviews__text">
-                      <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
-                        quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
-                        minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                        expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
-                        neque quo, voluptate aliquid minima ullam unde culpa!
-                      </p>
-                    </div>
-                    <button type="button" class="reviews__btn">Читать отзыв полностью</button>
-                  </div>
+        <div class="index-about">
+          <div class="index-about__content">
+            <div class="index-about__container">
+              <div class="index-about__body">
+                <h2 class="index-about__title">Немного о нас</h2>
+                <div class="index-about__text">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut autem inventore hic quibusdam,
+                    sequi consequatur corporis, earum doloremque aspernatur optio assumenda nulla quae tempora debitis
+                    ducimus. Labore, aliquam dolorem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut
+                    autem inventore hic quibusdam, sequi consequatur corporis, earum doloremque aspernatur optio
+                    assumenda nulla quae tempora debitis ducimus. Labore, aliquam dolorem!
+                  </p>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aut autem inventore hic quibusdam,
+                    sequi consequatur corporis, earum doloremque aspernatur optio assumenda nulla quae tempora debitis
+                    ducimus. Labore, aliquam dolorem!
+                  </p>
                 </div>
-                <div class="reviews__slide swiper-slide">
-                  <div class="reviews__quote">"</div>
-                  <div class="reviews__top">
-                    <div class="reviews__avatar">
-                      <img src="@img/face-1.jpg" alt="" />
-                    </div>
-                    <div class="reviews__name">
-                      <p>Иван Сидоров</p>
-                      <span>12.12.2023</span>
-                    </div>
-                  </div>
-                  <div class="reviews__bottom">
-                    <div class="reviews__text">
-                      <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
-                        quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
-                        minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                        expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
-                        neque quo, voluptate aliquid minima ullam unde culpa!
-                      </p>
-                    </div>
-                    <button type="button" class="reviews__btn">Читать отзыв полностью</button>
-                  </div>
-                </div>
-                <div class="reviews__slide swiper-slide">
-                  <div class="reviews__quote">"</div>
-                  <div class="reviews__top">
-                    <div class="reviews__avatar">
-                      <img src="@img/face-1.jpg" alt="" />
-                    </div>
-                    <div class="reviews__name">
-                      <p>Иван Сидоров</p>
-                      <span>12.12.2023</span>
-                    </div>
-                  </div>
-                  <div class="reviews__bottom">
-                    <div class="reviews__text">
-                      <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
-                        quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
-                        minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                        expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
-                        neque quo, voluptate aliquid minima ullam unde culpa!
-                      </p>
-                    </div>
-                    <button type="button" class="reviews__btn">Читать отзыв полностью</button>
-                  </div>
-                </div>
-                <div class="reviews__slide swiper-slide">
-                  <div class="reviews__quote">"</div>
-                  <div class="reviews__top">
-                    <div class="reviews__avatar">
-                      <img src="@img/face-1.jpg" alt="" />
-                    </div>
-                    <div class="reviews__name">
-                      <p>Иван Сидоров</p>
-                      <span>12.12.2023</span>
-                    </div>
-                  </div>
-                  <div class="reviews__bottom">
-                    <div class="reviews__text">
-                      <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
-                        quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
-                        minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-                        expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
-                        neque quo, voluptate aliquid minima ullam unde culpa!
-                      </p>
-                    </div>
-                    <button type="button" class="reviews__btn">Читать отзыв полностью</button>
-                  </div>
-                </div>
-              </div>
-              <div class="reviews__controls">
-                <button type="button" class="reviews__controls-btn">Оставить отзыв</button>
-                <div class="swiper-pagination reviews__controls-pagination"></div>
-                <div class="reviews__controls-inherit">
-                  <div class="swiper-button-prev reviews__controls-prev"></div>
-                  <div class="swiper-button-next reviews__controls-next"></div>
-                </div>
+                <a href="#" class="btn index-about__link">Подробнее</a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="callback" style="background-image: url(../img/callback.webp)">
-        <div class="callback__container">
-          <h2 class="callback__title title">Напишите нам !</h2>
-          <p class="callback__subtitle">
-            Если вы хотите заказать корпоративные обеды, банкет, кейтеринг или другие мероприятия, предложить
-            сотрудничество или связаться по другому интересующему вас вопросу, заполните форму связи и мы обязательно
-            ответим!
-          </p>
-          <form action="#" class="callback__form">
-            <input type="text" name="name" placeholder="Имя" class="callback__input" />
-            <input type="text" name="phone" placeholder="Телефон" class="callback__input" />
-            <input type="text" name="message" placeholder="Сообщение" class="callback__input" />
-            <button type="submit" class="callback__submit">Отправить</button>
-          </form>
-        </div>
-      </div>
-
-      <div class="index-gallery">
-        <div class="index-gallery__container">
-          <div class="index-gallery__title title--dark">Галерея</div>
-          <div class="index-gallery__header">
-            <a href="#" class="active">Салаты</a>
-            <a href="#">Горячее</a>
-            <a href="#">Торты и десерты</a>
-            <a href="#">Выпечка</a>
-            <a href="#">Напитки</a>
-            <a href="#">Супы</a>
-            <a href="#">Гариниры</a>
-          </div>
-          <div class="index-gallery__grid">
-            <a href="@img/gallery/IMG_4300.jpg" data-gall="myGallery" class="index-gallery__item">
-              <img src="@img/gallery/IMG_4300.jpg" alt="">
-              <i class="fa-regular fa-square-plus"></i>
-            </a>
-            <a href="@img/gallery/a7001b41_2f6b_4c29_89bb_38a95a06953b-_1_.jpg" data-gall="myGallery"
-              class="index-gallery__item">
-              <img src="@img/gallery/a7001b41_2f6b_4c29_89bb_38a95a06953b-_1_.jpg" alt="">
-              <i class="fa-regular fa-square-plus"></i>
-            </a>
-            <a href="@img/gallery/furshet_svadba.jpg" data-gall="myGallery" class="index-gallery__item">
-              <img src="@img/gallery/furshet_svadba.jpg" alt="">
-              <i class="fa-regular fa-square-plus"></i>
-            </a>
-            <a href="@img/gallery/y-_131-of-188_-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
-              <img src="@img/gallery/y-_131-of-188_-_1_.jpg" alt="">
-              <i class="fa-regular fa-square-plus"></i>
-            </a>
-            <a href="@img/gallery/y-_211-of-254_-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
-              <img src="@img/gallery/y-_211-of-254_-_1_.jpg" alt="">
-              <i class="fa-regular fa-square-plus"></i>
-            </a>
-            <a href="@img/gallery/y-_40-of-116_-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
-              <img src="@img/gallery/y-_40-of-116_-_1_.jpg" alt="">
-              <i class="fa-regular fa-square-plus"></i>
-            </a>
-            <a href="@img/gallery/IMG_4300.jpg" data-gall="myGallery" class="index-gallery__item">
-              <img src="@img/gallery/IMG_4300.jpg" alt="">
-              <i class="fa-regular fa-square-plus"></i>
-            </a>
-            <a href="@img/gallery/furshet_svadba.jpg" data-gall="myGallery" class="index-gallery__item">
-              <img src="@img/gallery/furshet_svadba.jpg" alt="">
-              <i class="fa-regular fa-square-plus"></i>
-            </a>
+          <div class="index-about__image">
+            <img src="@img/about.jpg" alt="" title="" />
           </div>
         </div>
-      </div>
 
-      @@include('html/contact.html',{})
-    </main>
-    @@include('html/_footer.htm',{})
-  </div>
-  @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
-</body>
+        <div class="reviews">
+          <div class="reviews__container">
+            <div class="reviews__inner">
+              <div class="reviews__block-top">
+                <h2 class="reviews__title title--dark">Отзывы клиентов</h2>
+              </div>
+              <div class="reviews__slider swiper">
+                <div class="reviews__wrapper swiper-wrapper">
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__quote">"</div>
+                    <div class="reviews__top">
+                      <div class="reviews__avatar">
+                        <img src="@img/face-1.jpg" alt="" />
+                      </div>
+                      <div class="reviews__name">
+                        <p>Иван Сидоров</p>
+                        <span>12.12.2023</span>
+                      </div>
+                    </div>
+                    <div class="reviews__bottom">
+                      <div class="reviews__text">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
+                          quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
+                          minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+                          expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
+                          neque quo, voluptate aliquid minima ullam unde culpa!
+                        </p>
+                      </div>
+                      <button type="button" class="reviews__btn">Читать отзыв полностью</button>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__quote">"</div>
+                    <div class="reviews__top">
+                      <div class="reviews__avatar">
+                        <img src="@img/face-1.jpg" alt="" />
+                      </div>
+                      <div class="reviews__name">
+                        <p>Иван Сидоров</p>
+                        <span>12.12.2023</span>
+                      </div>
+                    </div>
+                    <div class="reviews__bottom">
+                      <div class="reviews__text">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
+                          quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
+                          minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+                          expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
+                          neque quo, voluptate aliquid minima ullam unde culpa!
+                        </p>
+                      </div>
+                      <button type="button" class="reviews__btn">Читать отзыв полностью</button>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__quote">"</div>
+                    <div class="reviews__top">
+                      <div class="reviews__avatar">
+                        <img src="@img/face-1.jpg" alt="" />
+                      </div>
+                      <div class="reviews__name">
+                        <p>Иван Сидоров</p>
+                        <span>12.12.2023</span>
+                      </div>
+                    </div>
+                    <div class="reviews__bottom">
+                      <div class="reviews__text">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
+                          quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
+                          minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+                          expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
+                          neque quo, voluptate aliquid minima ullam unde culpa!
+                        </p>
+                      </div>
+                      <button type="button" class="reviews__btn">Читать отзыв полностью</button>
+                    </div>
+                  </div>
+                  <div class="reviews__slide swiper-slide">
+                    <div class="reviews__quote">"</div>
+                    <div class="reviews__top">
+                      <div class="reviews__avatar">
+                        <img src="@img/face-1.jpg" alt="" />
+                      </div>
+                      <div class="reviews__name">
+                        <p>Иван Сидоров</p>
+                        <span>12.12.2023</span>
+                      </div>
+                    </div>
+                    <div class="reviews__bottom">
+                      <div class="reviews__text">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat expedita vero adipisci quia
+                          quas? Perferendis iure illo commodi cum, accusamus officiis eius neque quo, voluptate aliquid
+                          minima ullam unde culpa! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
+                          expedita vero adipisci quia quas? Perferendis iure illo commodi cum, accusamus officiis eius
+                          neque quo, voluptate aliquid minima ullam unde culpa!
+                        </p>
+                      </div>
+                      <button type="button" class="reviews__btn">Читать отзыв полностью</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="reviews__controls">
+                  <button type="button" class="reviews__controls-btn">Оставить отзыв</button>
+                  <div class="swiper-pagination reviews__controls-pagination"></div>
+                  <div class="reviews__controls-inherit">
+                    <div class="swiper-button-prev reviews__controls-prev"></div>
+                    <div class="swiper-button-next reviews__controls-next"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="callback" style="background-image: url(../img/callback.webp)">
+          <div class="callback__container">
+            <h2 class="callback__title title">Напишите нам !</h2>
+            <p class="callback__subtitle">
+              Если вы хотите заказать корпоративные обеды, банкет, кейтеринг или другие мероприятия, предложить
+              сотрудничество или связаться по другому интересующему вас вопросу, заполните форму связи и мы обязательно
+              ответим!
+            </p>
+            <form action="#" class="callback__form">
+              <input type="text" name="name" placeholder="Имя" class="callback__input" />
+              <input type="text" name="phone" placeholder="Телефон" class="callback__input" />
+              <input type="text" name="message" placeholder="Сообщение" class="callback__input" />
+              <button type="submit" class="callback__submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="index-gallery">
+          <div class="index-gallery__container">
+            <div class="index-gallery__title title--dark">Галерея</div>
+            <div class="index-gallery__header">
+              <a href="#" class="active">Салаты</a>
+              <a href="#">Горячее</a>
+              <a href="#">Торты и десерты</a>
+              <a href="#">Выпечка</a>
+              <a href="#">Напитки</a>
+              <a href="#">Супы</a>
+              <a href="#">Гариниры</a>
+            </div>
+            <div class="index-gallery__grid">
+              <a href="@img/gallery/IMG_4300.jpg" data-gall="myGallery" class="index-gallery__item">
+                <img src="@img/gallery/IMG_4300.jpg" alt="" />
+                <i class="fa-regular fa-square-plus"></i>
+              </a>
+              <a
+                href="@img/gallery/a7001b41_2f6b_4c29_89bb_38a95a06953b-_1_.jpg"
+                data-gall="myGallery"
+                class="index-gallery__item"
+              >
+                <img src="@img/gallery/a7001b41_2f6b_4c29_89bb_38a95a06953b-_1_.jpg" alt="" />
+                <i class="fa-regular fa-square-plus"></i>
+              </a>
+              <a href="@img/gallery/furshet_svadba.jpg" data-gall="myGallery" class="index-gallery__item">
+                <img src="@img/gallery/furshet_svadba.jpg" alt="" />
+                <i class="fa-regular fa-square-plus"></i>
+              </a>
+              <a href="@img/gallery/y-_131-of-188_-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
+                <img src="@img/gallery/y-_131-of-188_-_1_.jpg" alt="" />
+                <i class="fa-regular fa-square-plus"></i>
+              </a>
+              <a href="@img/gallery/y-_211-of-254_-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
+                <img src="@img/gallery/y-_211-of-254_-_1_.jpg" alt="" />
+                <i class="fa-regular fa-square-plus"></i>
+              </a>
+              <a href="@img/gallery/y-_40-of-116_-_1_.jpg" data-gall="myGallery" class="index-gallery__item">
+                <img src="@img/gallery/y-_40-of-116_-_1_.jpg" alt="" />
+                <i class="fa-regular fa-square-plus"></i>
+              </a>
+              <a href="@img/gallery/IMG_4300.jpg" data-gall="myGallery" class="index-gallery__item">
+                <img src="@img/gallery/IMG_4300.jpg" alt="" />
+                <i class="fa-regular fa-square-plus"></i>
+              </a>
+              <a href="@img/gallery/furshet_svadba.jpg" data-gall="myGallery" class="index-gallery__item">
+                <img src="@img/gallery/furshet_svadba.jpg" alt="" />
+                <i class="fa-regular fa-square-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        @@include('html/contact.html',{})
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
 </html>
