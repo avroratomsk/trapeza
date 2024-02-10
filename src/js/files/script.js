@@ -97,3 +97,23 @@ if (ratingItemList) {
     })
   })
 }
+
+/**
+ * Просмотр полного описания продукта
+ */
+
+const btnViewProduct = document.querySelectorAll('.product-desc');
+if (btnViewProduct) {
+  btnViewProduct.forEach(btn => btn.addEventListener('click', viewProduct));
+}
+
+function viewProduct(e) {
+  let parentNodeHtml = this.closest('.card-product').querySelector('.card-product__info').innerHTML;
+  let popupView = document.querySelector('.popup-view .popup__grid');
+  console.log(popupView);
+
+  if (popupView) {
+    popupView.innerHTML = parentNodeHtml;
+  }
+
+}

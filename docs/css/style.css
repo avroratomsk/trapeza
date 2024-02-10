@@ -382,6 +382,20 @@ body::after {
   background-color: #74aa4b;
 }
 
+.popup-view .card-product__descr {
+  display: block;
+}
+
+.popup-view .card-product__image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.popup-view .card-product__image {
+  min-height: 100%;
+}
+
 .spollers {
   display: -ms-grid;
   display: grid;
@@ -523,6 +537,12 @@ section {
   font-weight: 400;
   font-family: "Nunito";
   padding: 0px 0px 20px;
+}
+
+.card-product__descr {
+  display: none;
+  line-height: 140%;
+  font-size: 14px;
 }
 
 .card-product__btns {

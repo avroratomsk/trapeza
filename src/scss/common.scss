@@ -73,6 +73,13 @@ section {
     padding: 0px 0px 20px;
   }
 
+  // .card-product__descr
+  &__descr {
+    display: none;
+    line-height: 140%;
+    font-size: 14px;
+  }
+
   // .card-product__btns
 
   &__btns {

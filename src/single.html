@@ -13,21 +13,19 @@
               <a href="/" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
                 class="breadcrumbs__item">
                 Главная
-                <meta itemprop="position" content="1">
+                <meta itemprop="position" content="1" />
               </a>
               <a href="/" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"
                 class="breadcrumbs__item">
                 Продукция
-                <meta itemprop="position" content="2">
+                <meta itemprop="position" content="2" />
               </a>
               <span itemprop="name" class="breadcrumbs__item">
                 Ежедневное меню
-                <meta itemprop="position" content="3">
+                <meta itemprop="position" content="3" />
               </span>
             </div>
-            <h1 class="products__title title-page__title">
-              Ежедневное меню
-            </h1>
+            <h1 class="products__title title-page__title">Ежедневное меню</h1>
           </div>
 
           <section class="single__day day-single">
@@ -44,7 +42,7 @@
                 <a href="#" data-day="" class="day-single__day">Суббота</a>
                 <div class="search" id="single-search">
                   <form action="">
-                    <input type="search" name="search" placeholder="Поиск" class="form-controls">
+                    <input type="search" name="search" placeholder="Поиск" class="form-controls" />
                     <button type="submit">Найти</button>
                   </form>
                 </div>
@@ -53,7 +51,7 @@
                 <i class="fa-solid fa-sliders"></i>
               </button>
               <div class="filter-sort" id="filter-sort">
-                <input type="hidden" name="filter-value" id="filter-value" value="">
+                <input type="hidden" name="filter-value" id="filter-value" value="" />
                 <div class="filter-sort__value _active">По умолчанию</div>
                 <div class="filter-sort__value">По убыванию</div>
                 <div class="filter-sort__value">По возрастанию</div>
@@ -66,7 +64,7 @@
               <div class="aside__options" id="option-part">
                 <h5 class="aside__title">Раздел</h5>
                 <div class="aside__filter">
-                  <input type="hidden" value="" class="aside__filter-hidden">
+                  <input type="hidden" value="" class="aside__filter-hidden" />
                   <ul class="aside__list">
                     <li class="aside__item _active">Первые блюда</li>
                     <li class="aside__item">Вторые блюда</li>
@@ -83,11 +81,11 @@
                 <div class="price-input">
                   <div class="price-input__fields">
                     <div class="price-input__field">
-                      <input type="number" class="price-input__min" value="25">
+                      <input type="number" class="price-input__min" value="25" />
                     </div>
                     <div class="separator"></div>
                     <div class="price-input__field">
-                      <input type="number" class="price-input__max" value="75">
+                      <input type="number" class="price-input__max" value="75" />
                     </div>
                   </div>
                   <div class="price-input__slider">
@@ -95,9 +93,9 @@
                   </div>
                   <div class="price-input__range">
                     <input type="range" name="range-min" id="range-min" min="0" max="10000"
-                      class="price-input__range-min" value="2500">
+                      class="price-input__range-min" value="2500" />
                     <input type="range" name="range-max" id="range-max" min="0" max="10000"
-                      class="price-input__range-max" value="7500">
+                      class="price-input__range-max" value="7500" />
                   </div>
                 </div>
               </div>
@@ -105,113 +103,83 @@
             <div class="single-content__products products-single">
               <div class="products-single__grid">
                 <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/about.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__info">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/food-1.jpg" alt="" title="" />
+                    </a>
+
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <p class="card-product__descr">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus minima soluta! Ipsam,
+                      numquam a. Doloremque excepturi illo dignissimos ut consectetur dolorem quod omnis, quibusdam
+                      perferendis consequuntur ea recusandae suscipit?
+                    </p>
+                  </div>
                   <div class="card-product__btns">
                     <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                    <button type="button" class="card-product__btn product-desc" id="product-desc-0012"
+                      data-popup=".popup-view">Описание</button>
                   </div>
                 </div>
                 <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__info">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/pominki.jpg" alt="" title="" />
+                    </a>
+
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <p class="card-product__descr">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus minima soluta! Ipsam,
+                      numquam a. Doloremque excepturi illo dignissimos ut consectetur dolorem quod omnis, quibusdam
+                      perferendis consequuntur ea recusandae suscipit?
+                    </p>
+                  </div>
                   <div class="card-product__btns">
                     <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                    <button type="button" class="card-product__btn product-desc" id="product-desc-0012"
+                      data-popup=".popup-view">Описание</button>
                   </div>
                 </div>
                 <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
+                  <div class="card-product__info">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/soup.png" alt="" title="" />
+                    </a>
+
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <p class="card-product__descr">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus minima soluta! Ipsam,
+                      numquam a. Doloremque excepturi illo dignissimos ut consectetur dolorem quod omnis, quibusdam
+                      perferendis consequuntur ea recusandae suscipit?
+                    </p>
+                  </div>
                   <div class="card-product__btns">
                     <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                    <button type="button" class="card-product__btn product-desc" id="product-desc-0012"
+                      data-popup=".popup-view">Описание</button>
                   </div>
                 </div>
                 <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                  <div class="card-product__info">
+                    <a href="#" class="card-product__image">
+                      <img src="@img/menu/food-1.jpg" alt="" title="" />
+                    </a>
+
+                    <a href="#" class="card-product__name">Блинчики</a>
+                    <p class="card-product__price">85₽</p>
+                    <p class="card-product__descr">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus minima soluta! Ipsam,
+                      numquam a. Doloremque excepturi illo dignissimos ut consectetur dolorem quod omnis, quibusdam
+                      perferendis consequuntur ea recusandae suscipit?
+                    </p>
                   </div>
-                </div>
-                <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
                   <div class="card-product__btns">
                     <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
-                  </div>
-                </div>
-                <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
-                  </div>
-                </div>
-                <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
-                  </div>
-                </div>
-                <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
-                  </div>
-                </div>
-                <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
-                  </div>
-                </div>
-                <div class="card-product">
-                  <a href="#" class="card-product__image">
-                    <img src="@img/menu/food-1.jpg" alt="" title="">
-                  </a>
-                  <a href="#" class="card-product__name">Блинчики</a>
-                  <p class="card-product__price">85₽</p>
-                  <div class="card-product__btns">
-                    <a href="#" class="card-product__btn">Подробнее</a>
-                    <a href="#" class="card-product__btn">Описание</a>
+                    <button type="button" class="card-product__btn product-desc" id="product-desc-0012"
+                      data-popup=".popup-view">Описание</button>
                   </div>
                 </div>
               </div>

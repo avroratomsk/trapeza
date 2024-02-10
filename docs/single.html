@@ -6,11 +6,11 @@
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240129220558" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240211003718" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?_v=20240129220558" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css?_v=20240211003718" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</style>
 </head>
 
@@ -48,20 +48,18 @@
 						<div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
 							<a href="/" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
 								Главная
-								<meta itemprop="position" content="1">
+								<meta itemprop="position" content="1" />
 							</a>
 							<a href="/" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="breadcrumbs__item">
 								Продукция
-								<meta itemprop="position" content="2">
+								<meta itemprop="position" content="2" />
 							</a>
 							<span itemprop="name" class="breadcrumbs__item">
 								Ежедневное меню
-								<meta itemprop="position" content="3">
+								<meta itemprop="position" content="3" />
 							</span>
 						</div>
-						<h1 class="products__title title-page__title">
-							Ежедневное меню
-						</h1>
+						<h1 class="products__title title-page__title">Ежедневное меню</h1>
 					</div>
 
 					<section class="single__day day-single">
@@ -78,7 +76,7 @@
 								<a href="#" data-day="" class="day-single__day">Суббота</a>
 								<div class="search" id="single-search">
 									<form action="">
-										<input type="search" name="search" placeholder="Поиск" class="form-controls">
+										<input type="search" name="search" placeholder="Поиск" class="form-controls" />
 										<button type="submit">Найти</button>
 									</form>
 								</div>
@@ -87,7 +85,7 @@
 								<i class="fa-solid fa-sliders"></i>
 							</button>
 							<div class="filter-sort" id="filter-sort">
-								<input type="hidden" name="filter-value" id="filter-value" value="">
+								<input type="hidden" name="filter-value" id="filter-value" value="" />
 								<div class="filter-sort__value _active">По умолчанию</div>
 								<div class="filter-sort__value">По убыванию</div>
 								<div class="filter-sort__value">По возрастанию</div>
@@ -100,7 +98,7 @@
 							<div class="aside__options" id="option-part">
 								<h5 class="aside__title">Раздел</h5>
 								<div class="aside__filter">
-									<input type="hidden" value="" class="aside__filter-hidden">
+									<input type="hidden" value="" class="aside__filter-hidden" />
 									<ul class="aside__list">
 										<li class="aside__item _active">Первые блюда</li>
 										<li class="aside__item">Вторые блюда</li>
@@ -117,19 +115,19 @@
 								<div class="price-input">
 									<div class="price-input__fields">
 										<div class="price-input__field">
-											<input type="number" class="price-input__min" value="25">
+											<input type="number" class="price-input__min" value="25" />
 										</div>
 										<div class="separator"></div>
 										<div class="price-input__field">
-											<input type="number" class="price-input__max" value="75">
+											<input type="number" class="price-input__max" value="75" />
 										</div>
 									</div>
 									<div class="price-input__slider">
 										<div class="price-input__progress" id="prodgress"></div>
 									</div>
 									<div class="price-input__range">
-										<input type="range" name="range-min" id="range-min" min="0" max="10000" class="price-input__range-min" value="2500">
-										<input type="range" name="range-max" id="range-max" min="0" max="10000" class="price-input__range-max" value="7500">
+										<input type="range" name="range-min" id="range-min" min="0" max="10000" class="price-input__range-min" value="2500" />
+										<input type="range" name="range-max" id="range-max" min="0" max="10000" class="price-input__range-max" value="7500" />
 									</div>
 								</div>
 							</div>
@@ -137,113 +135,79 @@
 						<div class="single-content__products products-single">
 							<div class="products-single__grid">
 								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/about.webp" type="image/webp"><img src="img/about.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
+									<div class="card-product__info">
+										<a href="#" class="card-product__image">
+											<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title="" /></picture>
+										</a>
+
+										<a href="#" class="card-product__name">Блинчики</a>
+										<p class="card-product__price">85₽</p>
+										<p class="card-product__descr">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus minima soluta! Ipsam,
+											numquam a. Doloremque excepturi illo dignissimos ut consectetur dolorem quod omnis, quibusdam
+											perferendis consequuntur ea recusandae suscipit?
+										</p>
+									</div>
 									<div class="card-product__btns">
 										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
+										<button type="button" class="card-product__btn product-desc" id="product-desc-0012" data-popup=".popup-view">Описание</button>
 									</div>
 								</div>
 								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
+									<div class="card-product__info">
+										<a href="#" class="card-product__image">
+											<picture><source srcset="img/menu/pominki.webp" type="image/webp"><img src="img/menu/pominki.jpg" alt="" title="" /></picture>
+										</a>
+
+										<a href="#" class="card-product__name">Блинчики</a>
+										<p class="card-product__price">85₽</p>
+										<p class="card-product__descr">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus minima soluta! Ipsam,
+											numquam a. Doloremque excepturi illo dignissimos ut consectetur dolorem quod omnis, quibusdam
+											perferendis consequuntur ea recusandae suscipit?
+										</p>
+									</div>
 									<div class="card-product__btns">
 										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
+										<button type="button" class="card-product__btn product-desc" id="product-desc-0012" data-popup=".popup-view">Описание</button>
 									</div>
 								</div>
 								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
+									<div class="card-product__info">
+										<a href="#" class="card-product__image">
+											<picture><source srcset="img/menu/soup.webp" type="image/webp"><img src="img/menu/soup.png" alt="" title="" /></picture>
+										</a>
+
+										<a href="#" class="card-product__name">Блинчики</a>
+										<p class="card-product__price">85₽</p>
+										<p class="card-product__descr">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus minima soluta! Ipsam,
+											numquam a. Doloremque excepturi illo dignissimos ut consectetur dolorem quod omnis, quibusdam
+											perferendis consequuntur ea recusandae suscipit?
+										</p>
+									</div>
 									<div class="card-product__btns">
 										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
+										<button type="button" class="card-product__btn product-desc" id="product-desc-0012" data-popup=".popup-view">Описание</button>
 									</div>
 								</div>
 								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
-									<div class="card-product__btns">
-										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
+									<div class="card-product__info">
+										<a href="#" class="card-product__image">
+											<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title="" /></picture>
+										</a>
+
+										<a href="#" class="card-product__name">Блинчики</a>
+										<p class="card-product__price">85₽</p>
+										<p class="card-product__descr">
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusamus minima soluta! Ipsam,
+											numquam a. Doloremque excepturi illo dignissimos ut consectetur dolorem quod omnis, quibusdam
+											perferendis consequuntur ea recusandae suscipit?
+										</p>
 									</div>
-								</div>
-								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
 									<div class="card-product__btns">
 										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
-									</div>
-								</div>
-								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
-									<div class="card-product__btns">
-										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
-									</div>
-								</div>
-								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
-									<div class="card-product__btns">
-										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
-									</div>
-								</div>
-								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
-									<div class="card-product__btns">
-										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
-									</div>
-								</div>
-								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
-									<div class="card-product__btns">
-										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
-									</div>
-								</div>
-								<div class="card-product">
-									<a href="#" class="card-product__image">
-										<picture><source srcset="img/menu/food-1.webp" type="image/webp"><img src="img/menu/food-1.jpg" alt="" title=""></picture>
-									</a>
-									<a href="#" class="card-product__name">Блинчики</a>
-									<p class="card-product__price">85₽</p>
-									<div class="card-product__btns">
-										<a href="#" class="card-product__btn">Подробнее</a>
-										<a href="#" class="card-product__btn">Описание</a>
+										<button type="button" class="card-product__btn product-desc" id="product-desc-0012" data-popup=".popup-view">Описание</button>
 									</div>
 								</div>
 							</div>
@@ -324,7 +288,7 @@
 		</div>
 
 	</div>
-	<div id="popup" aria-hidden="true" class="popup popup-fulldescr">
+	<div id="popup" aria-hidden="true" class="popup popup-view">
 		<div class="popup__wrapper">
 			<div class="popup__content">
 				<button data-close type="button" class="popup__close">X</button>
@@ -343,7 +307,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20240129220558"></script>
+	<script src="js/app.min.js?_v=20240211003718"></script>
 </body>
 
 </html>
